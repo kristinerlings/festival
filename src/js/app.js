@@ -6,3 +6,7 @@ if (import.meta.hot) {
     console.log('HMR');
   });
 }
+
+//testing
+const $colorTest = document.querySelector('.color-test');
+$colorTest.style.backgroundColor = 'red';
