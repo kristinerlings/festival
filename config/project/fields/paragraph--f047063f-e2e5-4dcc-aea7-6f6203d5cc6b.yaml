@@ -1,0 +1,27 @@
+columnSuffix: usztcvfu
+contentColumnType: text
+fieldGroup: 1dcba13b-bf8d-414e-839a-eb1dfd1c13d6 # Common
+handle: paragraph
+instructions: 'Write text here '
+name: paragraph
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: ''
+  columnType: text
+  configSelectionMode: choose
+  defaultTransform: ''
+  manualConfig: ''
+  purifierConfig: null
+  purifyHtml: true
+  redactorConfig: null
+  removeEmptyTags: false
+  removeInlineStyles: false
+  removeNbsp: false
+  showHtmlButtonForNonAdmins: false
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  uiMode: enlarged
+translationKeyFormat: null
+translationMethod: none
+type: craft\redactor\Field

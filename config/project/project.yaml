@@ -1,0 +1,36 @@
+dateModified: 1687954451
+email:
+  fromEmail: kristin.erlingsdottir@student.howest.be
+  fromName: web3-retake
+  transportType: craft\mail\transportadapters\Sendmail
+meta:
+  __names__:
+    1dcba13b-bf8d-414e-839a-eb1dfd1c13d6: Common # Common
+    3ab0172f-fb89-41e3-a431-f39a192e79cc: home # home
+    17b2f273-58ce-4b03-854e-4f98b6e7a54d: web3-retake # web3-retake
+    50b36d0b-47fa-4167-bd65-d24edc1d65f0: about # about
+    1284d164-214c-497a-a9ad-f9082785eb40: about # about
+    74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
+    f047063f-e2e5-4dcc-aea7-6f6203d5cc6b: paragraph # paragraph
+    fe37ed78-e85e-4fdb-8ac9-ed64637a7765: home # home
+plugins:
+  redactor:
+    edition: standard
+    enabled: true
+    schemaVersion: 2.3.0
+  vite:
+    edition: standard
+    enabled: true
+    schemaVersion: 1.0.0
+system:
+  edition: solo
+  live: true
+  name: web3-retake
+  schemaVersion: 4.4.0.4
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  requireEmailVerification: true

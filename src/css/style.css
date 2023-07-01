@@ -1,0 +1,43 @@
+@import url(reset.css);
+@import url(tokens.css);
+
+/*
+1.Global style
+2.Typography
+3.Layout
+4.Keyframes/animations
+5.Media queries
+*/
+
+/*=======================================
+      1. Global Style
+=========================================*/
+html {
+  scroll-behavior: smooth;
+  /*  overflow-x: hidden; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
+  /* overflow-x: hidden; */
+  background-color: rgb(215, 192, 133);
+}
+
+/*=======================================
+       2. Typography
+=========================================*/
+
+/*=======================================
+       3.  Layout
+=========================================*/
+
+a {
+  text-decoration: none;
+  color: rgb(170, 47, 68);
+}
