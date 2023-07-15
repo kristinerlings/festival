@@ -27,13 +27,23 @@ body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
   /* overflow-x: hidden; */
   background-color: rgb(154, 185, 156);
+  color: var(--color-white);
 }
 
 /*=======================================
        2. Typography
 =========================================*/
-/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
  */
+@font-face {
+  font-family: 'Fontspring-DEMO-integralcf-demibold';
+  src: url('../fonts/Fontspring-DEMO-integralcf-demibold.otf')
+    format('opentype');
+  font-display: swap;
+  font-style: normal;
+}
+
 /* @font-face {
   font-family: 'ClashDisplay-Extralight';
   src: url('../fonts/ClashDisplay-Extralight.otf') format('opentype');
@@ -105,6 +115,21 @@ nav {
   -webkit-transition: all 0.3s ease;
 }
 
+/* Active page */
+
+.link__home:is(:link, :active, :visited).active {
+  color: var(--color-pink);
+}
+
+.link__practical:is(:link, :active, :visited).active {
+  color: var(--color-pink);
+}
+
+.link__schedule:is(:link, :active, :visited).active {
+  color: var(--color-pink);
+}
+/**/
+
 .btn__tickets {
   background-color: var(--color-yellow);
   color: var(--color-dark);
@@ -131,5 +156,62 @@ header {
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  background-color: rgb(188, 111, 111); 
+  background-color: rgb(188, 111, 111);
+}
+
+.header__title {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-bold);
+  /*   font-family: var(--ff-dosis); */
+  text-transform: uppercase;
+  text-align: center;
+}
+/* .header__names{
+  justify-self: center; 
+} */
+
+/*** --- countdown --- ***/
+
+.container__countdown {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.countdown {
+  display: flex;
+  /* padding-inline: 10%; */
+}
+.countdown__title {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semibold);
+  padding-block-end: 1rem;
+}
+
+.countdown__days,
+.countdown__hrs,
+.countdown__min,
+.countdown__sec {
+  text-align: center;
+  font-family: var(--ff-dosis);
+  text-transform: uppercase;
+  font-weight: var(--font-weight-medium);
+  font-size: var(--font-size-xs);
+}
+
+.c__colon {
+  margin: 0rem 1.3rem;
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--ff-dosis);
+}
+
+.c__days,
+.c__hrs,
+.c__min,
+.c__sec,
+.c__colon {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
 }

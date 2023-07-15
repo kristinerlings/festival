@@ -2,18 +2,22 @@
 
 {% block head %}
  {{ craft.vite.script("src/js/countdown.js" ) }}
+ {{ craft.vite.script("src/js/activeLink.js" ) }}
 {% endblock %}
 
 {% block content %}
 	<header>
-		<h1>{{entry.title}}</h1>
-		<p> name</p>
+		<h1 class="header__title">{{entry.title}}</h1>
+		<p class="header__names"> name</p>
 		<p class="diamond white">&#11045;</p>
+		<div class="header__ticket">
+			<h3>date here</h3>
+			<h2>Secure <span class="pink">your ticket</span> now!</h2>
+			<a href="{{url('tickets')}}" class="nav__link btn__tickets">Buy ticket!</a>
+		</div>
 		<div class="container__countdown">
-						<div class="countdown__wrapper">
-							<p>Festival Countdown</p>
-							{% include "_/components/countdown.twig" %}
-						</div>
+				<h3 class="countdown__title">Festival Countdown</h3>
+				{% include "_/components/countdown.twig" %}
 		</div>
 	</header>
 	<section class="container__intro">
