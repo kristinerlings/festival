@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: about
-name: about
+handle: schedule
+name: schedule
 propagationMethod: all
 siteSettings:
   17b2f273-58ce-4b03-854e-4f98b6e7a54d: # web3-retake
     enabledByDefault: true
     hasUrls: true
-    template: _/pages/about.twig
-    uriFormat: about
+    template: _/pages/schedule.twig
+    uriFormat: schedule
 type: single

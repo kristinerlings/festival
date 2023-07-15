@@ -1,16 +1,16 @@
-<nav>
+<nav id="navbar">
  <ul class="nav">
-    <li><a href="" class="nav__link social">FB</a></li>
-    <li><a href="" class="nav__link social">IG</a></li>
-    <li><a href="" class="nav__link social">Tw</a></li>
-    <li><a href="" class="nav__link social">YT</a></li>
-    <li><a href="" class="nav__link social">SF</a></li>
+    <li><a href="https://www.facebook.com/" class="nav__link social">FB</a></li>
+    <li><a href="https://www.instagram.com/" class="nav__link social">IG</a></li>
+    <li><a href="https://www.twitter.com/" class="nav__link social">Tw</a></li>
+    <li><a href="https://www.youtube.com/" class="nav__link social">YT</a></li>
+    <li><a href="https://www.spotify.com/" class="nav__link social">SF</a></li>
  </ul>
- <a class="nav"><img src="{{url('assets/img/logo.svg')}}" alt="logo" class="nav__logo"></a>
+ <a href="{{siteUrl}}" class="nav nav__logo"><img src="/public/logo.svg" alt="myrkva logo" ></a>
  <ul class="nav">
     <li><a href="{{siteUrl}}" class="nav__link social">Home</a></li>
-    <li><a href="{{url('about')}}" class="nav__link">Schedule</a></li>
-    <li><a href="{{url('practical')}}" class="nav__link">Practical</a></li>
-    <li><a href="{{url('tickets')}}" class="nav__link">Tickets</a></li>
+    <li><a href="{{url('schedule')}}" class="nav__link link__schedule">Schedule</a></li>
+    <li><a href="{{url('practical')}}" class="nav__link link__practical">Practical</a></li>
+    <li><a href="{{url('tickets')}}" class="nav__link btn__tickets">Tickets</a></li>
  </ul>
 </nav>

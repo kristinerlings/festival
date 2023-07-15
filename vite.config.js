@@ -17,6 +17,8 @@ export default ({ command }) => ({
     rollupOptions: {
       input: {
         app: './src/js/app.js',
+        countdown: './src/js/countdown.js',
+        pageDetector: './src/js/activeLink.js',
       },
     },
   },
