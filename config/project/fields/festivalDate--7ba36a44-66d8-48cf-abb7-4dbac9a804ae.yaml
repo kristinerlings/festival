@@ -1,0 +1,19 @@
+columnSuffix: trymjraj
+contentColumnType: text
+fieldGroup: 72dd30ae-32fb-4a41-a4de-ffd82a4c00fc # home
+handle: festivalDate
+instructions: 'When does the festival take place?'
+name: 'Festival Date'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 16.-17.Sept
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

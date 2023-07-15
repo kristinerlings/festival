@@ -1,5 +1,23 @@
 {% extends "_/layouts/base" %}
 
 {% block content %}
+  <section class="container__detailpage">
+	  <a href="{{ craft.app.request.getReferrer() }}" class="btn btn__back">Go back</a>
+	  <section class="detailpage">
+		  <h1 class="hidden">detailpage for Artists</h1>
+		  {% set asset = entry.artistImage.one() %}
+		  {% if asset %}
+			  <img class="detailpage__img" src="{{ asset.getUrl({width:592, height:565}) }}" alt="{{ entry.artistName }}"/>
+		  {% endif %}
+		  <div class="detailpage__info"> 
+        <h3>{{entry.artistTime}}</h3>
+        <h3>{{entry.artistDate}} &#11045; {{entry.stage}}</h3>
+        <h2>{{entry.artistName}}</h2>
+        <p>Songs: <span class="pink">{{entry.songs}}</span></p>
+        <p>{{entry.paragraph}}</p>
+		  <div>
+	  </section>
+  </section>
+
 
 {% endblock %}

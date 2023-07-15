@@ -1,0 +1,19 @@
+columnSuffix: yhnmaugw
+contentColumnType: text
+fieldGroup: 72dd30ae-32fb-4a41-a4de-ffd82a4c00fc # home
+handle: artistName
+instructions: 'Write a name of an artist performing this year'
+name: 'Artist Name'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: Valdimar
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

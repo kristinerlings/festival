@@ -1,0 +1,19 @@
+columnSuffix: dqoszjos
+contentColumnType: string(120)
+fieldGroup: 0637d01f-a0c9-4fbd-beff-53a3031fd152 # artists
+handle: artistDate
+instructions: 'Which day does the artist perform? '
+name: 'Artist Date'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: 30
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'SAT 16/09'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
