@@ -1,11 +1,22 @@
 {% extends "_/layouts/base" %}
 
-{# {% block head %}
-{% endblock %} #}
+{% block head %}
+ {{ craft.vite.script("src/js/countdown.js" ) }}
+{% endblock %}
 
 {% block content %}
-  	<h1>{{entry.title}}</h1>
-		<p>
-			{{ entry.paragraph}}
-		</p>
+	<header>
+		<h1>{{entry.title}}</h1>
+		<p> name</p>
+		<p class="diamond white">&#11045;</p>
+		<div class="container__countdown">
+						<div class="countdown__wrapper">
+							<p>Festival Countdown</p>
+							{% include "_/components/countdown.twig" %}
+						</div>
+		</div>
+	</header>
+	<section class="container__intro">
+		
+	</section>
 {% endblock %}

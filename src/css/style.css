@@ -32,6 +32,14 @@ body {
 /*=======================================
        2. Typography
 =========================================*/
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ */
+/* @font-face {
+  font-family: 'ClashDisplay-Extralight';
+  src: url('../fonts/ClashDisplay-Extralight.otf') format('opentype');
+  font-display: swap;
+  font-style: normal;
+} */
 
 /*=======================================
        3.  Layout
@@ -40,6 +48,26 @@ body {
 a {
   text-decoration: none;
   color: var(--color-white);
+}
+
+.hidden {
+  display: none;
+}
+
+.white {
+  color: var(--color-white);
+}
+.pink {
+  color: var(--color-pink);
+}
+.yellow {
+  color: var(--color-yellow);
+}
+.bold {
+  font-weight: bold;
+}
+.semibold {
+  font-weight: 500;
 }
 
 /* --------- nav -----------*/
@@ -89,4 +117,19 @@ nav {
   color: var(--color-dark);
   transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
+}
+
+/* --------- header -----------*/
+header {
+  /*   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
+  background-image: url('../img/header-img.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(188, 111, 111); 
 }
