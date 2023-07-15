@@ -216,6 +216,10 @@ header {
   font-family: var(--ff-dosis);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-s);
+  display: flex;
+}
+.header__names > p {
+  padding: 0rem 1.2rem;
 }
 
 .header__location {
@@ -366,30 +370,44 @@ header {
   -webkit-transition: all 0.3s ease;
 }
 
-
-
-
 /* --------- THE LINE UP -----------*/
-.container__lineup{
-  padding-block-start: 6rem;
+.container__lineup {
+  padding-block: 6rem;
 }
 
 .container__lineup > h2 {
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
-  padding-block: 1rem;
+  /*   padding-block: 1rem; */
 }
 
+.container__lineup > h3 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  padding-block: 1rem;
+  font-family: var(--ff-dosis);
+  padding-inline-start: 1.5rem; 
+}
+.lineup__artists > a {
+  display: block;
+}
 
+.lineup__artists {
+  display: flex;
+  flex-direction: row;
+  padding: 0rem 1rem;
+}
 
-
-
-
-
-
-
-
-
+.lineup__artist{
+  padding: 0rem .5rem;
+  margin: 0 auto;
+}
+.artist__img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0 auto;
+}
 
 /* --------- FOOTER -----------*/
 footer {

@@ -81,60 +81,6 @@ fieldLayouts:
         name: Header
         uid: 00f1d1e7-2330-4384-9012-1bda49c90e87
         userCondition: null
-      -
-        elementCondition: null
-        elements:
-          -
-            elementCondition: null
-            fieldUid: b897e2b1-d4d5-4fb8-b4e6-debd0a228348 # Artist Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: a0edd781-e7aa-4841-80d0-43ee6514be20
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 04614edc-2e8d-4213-abba-4792b0d46820 # Artist Name
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: ff8abc57-0b6d-47f4-b588-719f70ddb8c1
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 7fb27517-c8be-46e4-b189-53fee60e4bfd # Artist Date
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 4439de46-3011-4c58-97b2-4cfefadb6afe
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 2cfaf68a-146b-4d40-b7d9-c1f70a40cd11 # Stage
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: f4334d70-fe70-4cfe-b57d-9c133d87da3f
-            userCondition: null
-            warning: null
-            width: 100
-        name: Lineup
-        uid: cf1c90d3-ebcc-45de-8ddb-4314259e71fd
-        userCondition: null
 handle: home
 hasTitleField: false
 name: Home

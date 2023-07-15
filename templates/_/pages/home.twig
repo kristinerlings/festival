@@ -11,17 +11,17 @@
 			<h1 class="header__title">{{entry.year}} Myrkva Festival</h1>
 			<h3 class="header__location">{{entry.location}}</h3>
 			<div class="header__names">
-				 {% set totalBlocks = entry.introNameBlock|length %}
+				{% set totalBlocks = entry.introNameBlock|length %}
 				{% for block in entry.introNameBlock %}
 				{% switch block.type %}
 						{% case 'introName' %} 
     				<p>{{ block.artistName }}</p>
-						 {% if loop.index < totalBlocks %}
+						 	{% if loop.index < totalBlocks %}
                     <p>&#11045;</p>
-             {% endif %}
-			{% endswitch %}
-		{% endfor %}
-		</div>
+             	{% endif %}
+				{% endswitch %}
+				{% endfor %}
+			</div>
 			<div class="header__ticket">
 				<h3>{{entry.festivalDate}}</h3>
 				<h2>Secure <span class="pink">your ticket</span> now!</h2>
@@ -33,6 +33,7 @@
 			</div>
 		</div>
 	</header>
+
 	<section class="container__intro">
 		<h2 class="hidden">About Myrkva</h2>
 			<img class="intro__img" src="public/home-intro.png" alt="DJ on stage">
@@ -43,22 +44,24 @@
 			<a class="btn btn__intro" href="">Practical info</a>
 		</div>
 	</section>
+
 	<section class="container__lineup">
 		<h2>The line up</h2>
-		<p>Discover the first names for Myrvka Festival {{entry.year}}</p>
-		{% set artists = craft.entries.section('artists').all() %}
-			{% for artist in artists %}
-			<a href="{{artist.url}}">
-			<article class="lineup__artist">
-					{% for photo in artist.artistImage.all() %}
-						<img class="artist__img" src="{{ photo.getUrl({ width: 309, height: 363 })}}" alt="{{ artist.artistName }}"/>
-						<h3 class="artist__name">{{ artist.artistName }}</h3>
-						<p class="artist__time">{{entry.artistDate}} &#11045; {{entry.stage}}</p>
-					{% endfor %} 
-			</article>
-			</a>	
-		{% endfor %} 
+		<h3>Discover the first names for Myrvka Festival {{entry.year}}</h3>
+		<div class="lineup__artists">
+			{% set artists = craft.entries.section('artists').all() %}
+				{% for artist in artists %}
+				<a href="{{artist.url}}">
+					<article class="lineup__artist">
+						{% for photo in artist.artistImage.all() %}
+							<img class="artist__img" src="{{ photo.getUrl({ width: 309, height: 363 })}}" alt="{{ artist.artistName }}"/>
+							<h3 class="artist__name">{{ artist.artistName }}</h3>
+							<p class="artist__time">{{artist.artistDate}} &#11045; {{artist.stage}}</p>
+						{% endfor %} 
+					</article>
+				</a>		
+			{% endfor %} 
+		</div>
 	</section>
-
 
 {% endblock %}
