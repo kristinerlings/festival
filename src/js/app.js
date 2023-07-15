@@ -7,6 +7,4 @@ if (import.meta.hot) {
   });
 }
 
-//testing
-const $colorTest = document.querySelector('.color-test');
-$colorTest.style.backgroundColor = 'red';
+
