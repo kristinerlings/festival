@@ -39,12 +39,54 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--color-white);
 }
 
 /* --------- nav -----------*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-dark);
+  padding: 0.5rem;
+}
+
 .nav {
   display: flex;
-  flex-direction: row;
-  background-color: var(--color-dark);
-  padding: 2rem; 
+  align-items: center;
+  padding: 0 2rem;
+  font-size: 1rem;
+}
+
+/* .nav:first-child {
+  justify-content: flex-start;
+}
+.nav:nth-child(2) {
+  justify-content: center;
+}
+.nav:last-child {
+  justify-content: flex-end;
+}  */
+
+.nav__link {
+  padding: 0 0.5rem;
+}
+
+.nav__link:hover {
+  color: var(--color-pink);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
+.btn__tickets {
+  background-color: var(--color-yellow);
+  color: var(--color-dark);
+  padding: 0.3rem 1.8rem;
+  border-radius: 16px;
+}
+
+.btn__tickets:hover {
+  background-color: var(--color-pink);
+  color: var(--color-dark);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
