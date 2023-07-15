@@ -39,5 +39,12 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(170, 47, 68);
+}
+
+/* --------- nav -----------*/
+.nav {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--color-dark);
+  padding: 2rem; 
 }

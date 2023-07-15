@@ -1,6 +1,7 @@
-
-:root{
-
-  --color-red: rgb(230, 110, 110); 
-
+:root {
+  --color-dark: #252525;
+  --color-pink: #f967e1;
+  --color-yellow: #f6f967;
+  --color-white: #fbfbfb;
+  --color-white-darker: #f0f0f0;
 }
