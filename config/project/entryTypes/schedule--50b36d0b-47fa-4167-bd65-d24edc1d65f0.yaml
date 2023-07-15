@@ -45,10 +45,10 @@ fieldLayouts:
         name: Content
         uid: 3b27d363-9098-4d6a-a8f7-eb24b27c7ead
         userCondition: null
-handle: about
+handle: schedule
 hasTitleField: true
-name: about
-section: 1284d164-214c-497a-a9ad-f9082785eb40 # about
+name: schedule
+section: 1284d164-214c-497a-a9ad-f9082785eb40 # schedule
 sortOrder: 1
 titleFormat: null
 titleTranslationKeyFormat: null
