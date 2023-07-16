@@ -1,0 +1,19 @@
+columnSuffix: qaswjkra
+contentColumnType: text
+fieldGroup: 1dcba13b-bf8d-414e-839a-eb1dfd1c13d6 # Common
+handle: imageDescription
+instructions: 'Write a description for the image uploaded. This will not be visible on the site. '
+name: 'Image Description'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: Image
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

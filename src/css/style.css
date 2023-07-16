@@ -124,7 +124,8 @@ nav {
 }
 .nav:nth-child(2) {
   grid-column: 2/3;
-  margin: 0 auto;
+  /* margin: 0 auto; */
+  justify-self: center;
 }
 .nav:last-child {
   grid-column: 3/4;
@@ -481,7 +482,8 @@ header {
   color: var(--color-yellow);
   font-family: var(--ff-dosis);
   font-weight: var(--font-weight-bold);
-  font-size: 26px;
+  font-size: clamp(23px, calc(1.4375rem + ((1vw - 3.93px) * 0.2681)), 26px);
+
   /*   padding-block-end: .5rem; */
 }
 

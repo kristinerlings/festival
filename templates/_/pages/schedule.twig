@@ -19,6 +19,8 @@
 				<h2>Main stage:</h2>
 				{% set artists = craft.entries.section('artists').all() %}
 				{% for artist in artists %}
+				{# {% set myTagQuery = craft.tags().group('tagsSchedule').all()  %}
+					{% if 'saturday' in myTagQuery and 'stage-main' in myTagQuery %} #}
 				<a href="{{artist.url}}">
 					<article class="schedule__artist">
 						{% for photo in artist.artistImage.all() %}
@@ -27,7 +29,8 @@
 							<img class="schedule__img" src="{{ photo.getUrl({ width: 103, height:65 })}}" alt="{{ artist.artistName }}"/>
 						{% endfor %} 
 					</article>
-				</a>		
+				</a>	
+				{# {% endif %}	#}
 				{% endfor %} 
 				</section>
 				<section class="stage stage__z">
@@ -46,7 +49,6 @@
 				{% endfor %} 
 				</section>
 			</div>
-
 		</section>
 		<p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>
 	</section>
