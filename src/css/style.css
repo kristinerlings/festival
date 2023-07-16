@@ -27,7 +27,7 @@ body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
   font-size: var(--font-size-s);
   /* overflow-x: hidden; */
-  background-color: rgb(154, 185, 156);
+  background-color: var(--color-dark); /*  rgb(154, 185, 156); */
   color: var(--color-white);
 }
 
@@ -106,7 +106,7 @@ a {
 /* --------- nav -----------*/
 nav {
   background-color: var(--color-dark);
-  padding: 0.6rem 5%;
+  padding: 0.8rem 5%;
   /* max-width: 90%; */
   margin: 0 auto;
   display: grid;
@@ -192,7 +192,7 @@ header {
 .header {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 15% 60% 25%;
+  grid-template-rows: 12% 60% 28%;
   height: 100vh;
   width: 100%;
 }
@@ -228,7 +228,7 @@ header {
   grid-column: 2/3;
   justify-self: end;
   /*   padding: 7% 10%; */
-  padding-block-start: 17%;
+  padding-block-start: 15%;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-s);
 }
@@ -379,12 +379,14 @@ header {
 .container__lineup > h2 {
   font-size: var(--font-size-h2);
   font-weight: var(--font-weight-bold);
+  color: var(--color-yellow);
+  text-transform: uppercase;
   /*   padding-block: 1rem; */
 }
 
-.container__lineup > h3 {
-  font-size: var(--font-size-m);
-  font-weight: var(--font-weight-bold);
+.lineup__intro > h3 {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-medium);
   padding-block: 1rem;
   font-family: var(--ff-dosis);
 }

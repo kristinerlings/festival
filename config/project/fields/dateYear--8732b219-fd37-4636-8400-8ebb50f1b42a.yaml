@@ -1,0 +1,19 @@
+columnSuffix: xiekszmz
+contentColumnType: text
+fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
+handle: dateYear
+instructions: 'Write the date and year of the festival '
+name: 'Date Year'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: '16/09, 2023'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

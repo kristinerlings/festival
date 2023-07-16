@@ -5,8 +5,49 @@
 {% endblock %}
 
 {% block content %}
-  	<h1>{{entry.title}}</h1>
-		<p>
-			{{ entry.paragraph}}
+	<section class="container__schedule">
+  	<h1>Schedule</h1>
+		<p class="schedule__intro">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
 		</p>
+		<section class="schedule">
+			<h2 class="hidden">The schedule</h2>
+			<button class="btn__schedule active">Saturday <br><span class="btn--date">{{entry.dateYear}}</span></button> {# add here#}
+			<button class="btn__schedule">Sunday <br><span class="btn--date">17/09, 2023</span></button>
+			<div class="stages__line"></div>
+			<div class="wrapper__stages">
+				<section class="stage stage__main">
+				<h2>Main stage:</h2>
+				{% set artists = craft.entries.section('artists').all() %}
+				{% for artist in artists %}
+				<a href="{{artist.url}}">
+					<article class="schedule__artist">
+						{% for photo in artist.artistImage.all() %}
+							<h4>{{artist.artistName}}</h3>
+							<p>{{artist.artistTime}}</p>
+							<img class="schedule__img" src="{{ photo.getUrl({ width: 103, height:65 })}}" alt="{{ artist.artistName }}"/>
+						{% endfor %} 
+					</article>
+				</a>		
+				{% endfor %} 
+				</section>
+				<section class="stage stage__z">
+				<h2>Stage Z:</h2>
+				{% set artists = craft.entries.section('artists').all() %}
+				{% for artist in artists %}
+				<a href="{{artist.url}}">
+					<article class="schedule__artist">
+						{% for photo in artist.artistImage.all() %}
+							<h4>{{artist.artistName}}</h3>
+							<p>{{artist.artistTime}}</p>
+							<img class="schedule__img" src="{{ photo.getUrl({ width: 103, height:65 })}}" alt="{{ artist.artistName }}"/>
+						{% endfor %} 
+					</article>
+				</a>		
+				{% endfor %} 
+				</section>
+			</div>
+
+		</section>
+	</section>
 {% endblock %}
