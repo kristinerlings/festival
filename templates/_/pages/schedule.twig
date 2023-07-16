@@ -9,4 +9,26 @@
 		<p>
 			{{ entry.paragraph}}
 		</p>
+		<section>
+			<h2 class="hidden">The schedule</h2>
+			<button>Saturday <br><span>16/09, 2023</span></button> {# add here#}
+			<button>Sunday <br><span>17/09, 2023</span></button>
+			<section>
+				<h3>Main stage</h3>
+				{% set artists = craft.entries.section('artists').all() %}
+				{% for artist in artists %}
+				<a href="{{artist.url}}">
+					<article class="schedule__artist">
+						{% for photo in artist.artistImage.all() %}
+							<img class="schedule__img" src="{{ photo.getUrl({ width: 120, height:75 })}}" alt="{{ artist.artistName }}"/>
+							<p>{{artist.artistTime}}</p>
+							<p>{{ artist.artistName }}</p>
+						{% endfor %} 
+					</article>
+				</a>		
+			{% endfor %} 
+			</section>
+	
+
+		</section>
 {% endblock %}
