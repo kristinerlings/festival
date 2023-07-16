@@ -5,8 +5,61 @@
 {% endblock %}
 
 {% block content %}
-  	<h1>{{entry.title}}</h1>
-		<p>
+  <section class="container__practical">
+    <section>
+  	  <h1>{{entry.title}}</h1>
+		  <p>
 			{{ entry.paragraph}}
-		</p>
+		  </p>
+      <div>
+      <h2>How to get there?</h2>
+      <ul>
+        <li>
+          <h3>Address</h3>
+          {#<p>{{ entry.address}}</p>#}
+          <button>Google Maps</button>
+        </li>
+        <li>
+          <h3>By bus</h3>
+         {# <p> {{ entry.byBus}}</p>#}
+        </li>
+        <li>
+          <h3>Closest Airport</h3>
+          {#<p>{{ entry.closestAirport}}</p>#}
+        </li>
+      </ul>
+      <a href="{{url('schedule')}}" class="btn btn__shedule">See the schedule</a>
+      <a href="{{url('tickets')}}" class="btn btn__buy">Buy Tickets</a>
+		</div>
+   </section>
+   <section class="practical__do--dont">
+   	<img class="do__img" src="public/practical-do.png" alt="People having fun">
+    <div>
+      <h2>The Do’s and dont’s</h2>
+      <h3>Bring with you</h3>
+        <ol>
+          <li>Your tickets<li>
+          <li>Valid photo ID<li>
+        </ol>
+        <h3>Leave at home</h3>
+        <ol>
+          <li>Alcohol and Illicit drugs<li>
+          <li>Seats and umbrellas<li>
+        </ol>
+    </div>
+   </section>
+   <section class="practical__food">
+    <h2>Food and drinks</h2>
+    <p><span class="bold">Food Options:</span> A diverse range of food trucks and vendors will be available, offering a variety of cuisines such as burgers, pizza, tacos, vegetarian/vegan options, and desserts.</p>
+    <p><span class="bold">Drink Options:</span> Drinks: Multiple beverage stations offering water, soft drinks, and alcoholic beverages (beer, wine, and cocktails) will be scattered throughout the festival grounds. </p>
+   </section>
+   <section class="practical__faq">
+      <p>Age Restrictions: You must be 18 years old</p>
+      <p>All attendees must have a valid ticket for entry. Tickets can be only be purchased online.</p>
+      <p><span class="bold">Accessibility:</span> The festival grounds are designed to be wheelchair accessible, with ramps and paved pathways throughout the venue. We have designated accessible parking areas for convenience.</p>
+      <p>Do you have further questions? Send us an email and we'll happily answer your questions: info@myrkvafestival.is </p>
+   </section>
+
+    
+  <section>
 {% endblock %}

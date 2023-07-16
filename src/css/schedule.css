@@ -1,0 +1,144 @@
+@import url(reset.css);
+@import url(style.css);
+@import url(tokens.css);
+
+/*=========  Schedule    ============ */
+.container__schedule{
+  padding-block: 4rem;
+}
+.schedule {
+  max-width: 85%;
+  margin: 0 auto;
+  padding-block: 3rem;
+}
+.container__schedule > h1{
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  text-align: center;
+  padding: 2rem 0rem 1rem;
+}
+.schedule__intro{
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+  line-height: 1.25;
+  color: var(--color-white);
+
+}
+
+.wrapper__stages {
+  display: flex;
+  justify-content: center;
+  /*  border: 1px solid var(--color-white);
+  border-top: none;  */
+}
+.stages__line {
+  padding: 0.5rem;
+  background-color: var(--color-yellow);
+}
+
+/*===== BTNS =====*/
+.btn__schedule {
+  color: #bcb2bb;
+  background-color: var(--color-dark);
+  border: 1px solid #bcb2bb;
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-s);
+  padding-block: 0.2rem;
+  border-radius: 8px;
+  margin: .5rem .2rem .5rem 0rem
+  ;
+  width: 13rem;
+  text-transform: uppercase;
+  align-self: end;
+}
+
+.active{
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border:none;
+}
+
+.btn--date {
+  text-transform: lowercase;
+  font-size: 16px;
+}
+
+/*======= Stage  ======== */
+
+.stage {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+  border: 1px solid var(--color-white);
+  border-top: none;
+  width: 100%;
+  padding-block-end: 1.5rem;
+}
+
+.stage > h2 {
+  padding: 2rem 3.7rem 1rem;
+  color: var(--color-white);
+}
+
+/*unique artist container*/
+.schedule__artist {
+  margin: 0.2rem 2rem;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 1fr 1fr;
+  padding: 0.4rem 0.4rem 0.4rem 2rem;
+}
+
+.schedule__artist > h4 {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.schedule__artist > p {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-pink);
+  grid-column: 1/2;
+  grid-row: 1/2;
+  align-self: center;
+}
+
+.schedule__img {
+  visibility: hidden;
+  grid-column: 2/3;
+  grid-row: 1/3;
+  justify-self: end;
+}
+
+.schedule__artist:hover {
+  border-radius: 4px;
+  background-color: var(--color-white-darker);
+  /*   transition: all 0.3s ease;
+  -webkit-transition: all 01s ease; */
+}
+
+.schedule__artist:hover > .schedule__img {
+  visibility: visible;
+}
+
+.schedule__artist:hover > h4 {
+  color: var(--color-dark);
+  text-decoration: underline;
+}
+
+.schedule__artist:hover > p {
+  font-size: var(--font-size-m);
+  font-weight: var(--font-weight-semi-bold);
+}
+
+.schedule__artist:hover,
+.schedule__artist:hover > .schedule__img {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+/*artist container ends here*/

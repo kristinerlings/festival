@@ -1,4 +1,4 @@
-dateModified: 1689462075
+dateModified: 1689472735
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -25,13 +25,14 @@ meta:
     17b2f273-58ce-4b03-854e-4f98b6e7a54d: web3-retake # web3-retake
     19b07e91-6fff-4f1b-99d8-c068407945a4: 'Artist Name' # Artist Name
     19bc3333-d1ef-45ec-8dd6-0c4510802dd9: Songs # Songs
-    50b36d0b-47fa-4167-bd65-d24edc1d65f0: schedule # schedule
+    50b36d0b-47fa-4167-bd65-d24edc1d65f0: Schedule # Schedule
     66a78b13-da8f-4adc-b463-278040fca9e8: 'Intro Name Block' # Intro Name Block
     72dd30ae-32fb-4a41-a4de-ffd82a4c00fc: home # home
     78fb5cea-0619-486b-bdc6-368195500948: year # year
     0637d01f-a0c9-4fbd-beff-53a3031fd152: artists # artists
-    1284d164-214c-497a-a9ad-f9082785eb40: schedule # schedule
+    1284d164-214c-497a-a9ad-f9082785eb40: Schedule # Schedule
     04614edc-2e8d-4213-abba-4792b0d46820: 'Artist Name' # Artist Name
+    8732b219-fd37-4636-8400-8ebb50f1b42a: 'Date Year' # Date Year
     74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
     b897e2b1-d4d5-4fb8-b4e6-debd0a228348: 'Artist Image' # Artist Image
     be98dd5a-0e66-4f97-9875-80d6f25b11f9: 'Artist Time' # Artist Time
