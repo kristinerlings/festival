@@ -10,11 +10,11 @@
 			  <img class="detailpage__img" src="{{ asset.getUrl({width:592, height:565}) }}" alt="{{ entry.artistName }}"/>
 		  {% endif %}
 		  <div class="detailpage__info"> 
-        <h3>{{entry.artistTime}}</h3>
-        <h3>{{entry.artistDate}} &#11045; {{entry.stage}}</h3>
-        <h2>{{entry.artistName}}</h2>
-        <p>Songs: <span class="pink">{{entry.songs}}</span></p>
-        <p>{{entry.paragraph}}</p>
+        <h3 class="info__time">{{entry.artistTime}}</h3>
+        <h3 class="info__stage">{{entry.artistDate}} <span class="diamond">&#11045;</span> {{entry.stage}}</h3>
+        <h2 class="info__name">{{entry.artistName}}</h2>
+        <p class="info__songs">Songs: <span class="pink">{{entry.songs}}</span></p>
+        <p class="info__about">{{entry.paragraph}}</p>
 		  <div>
 	  </section>
   </section>

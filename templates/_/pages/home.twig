@@ -47,7 +47,10 @@
 
 	<section class="container__lineup">
 		<h2>The line up</h2>
-		<h3>Discover the first names for Myrvka Festival {{entry.year}}</h3>
+		<div class="lineup__intro">
+			<h3>Discover the first names for Myrvka Festival {{entry.year}}</h3>
+			<a href="{{url('schedule')}}" class="btn btn__shedule">See festival schedule</a>
+		</div>
 		<div class="lineup__artists">
 			{% set artists = craft.entries.section('artists').all() %}
 				{% for artist in artists %}
@@ -55,8 +58,8 @@
 					<article class="lineup__artist">
 						{% for photo in artist.artistImage.all() %}
 							<img class="artist__img" src="{{ photo.getUrl({ width: 309, height: 363 })}}" alt="{{ artist.artistName }}"/>
-							<h3 class="artist__name">{{ artist.artistName }}</h3>
-							<p class="artist__time">{{artist.artistDate}} &#11045; {{artist.stage}}</p>
+							<h3>{{ artist.artistName }}</h3>
+							<p>{{artist.artistDate}} <span class="diamond">&#11045;</span> {{artist.stage}}</p>
 						{% endfor %} 
 					</article>
 				</a>		
