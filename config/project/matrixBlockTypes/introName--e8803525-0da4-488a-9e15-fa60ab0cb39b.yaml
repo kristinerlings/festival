@@ -1,0 +1,46 @@
+field: 66a78b13-da8f-4adc-b463-278040fca9e8 # Intro Name Block
+fieldLayouts:
+  34722b64-9d31-4e0b-aec3-61715a743cff:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 19b07e91-6fff-4f1b-99d8-c068407945a4 # Artist Name
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4551857e-8cee-4041-a96c-889418b4fbac
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 7d26eb69-65b8-423d-b6f1-2e032b777d0c
+        userCondition: null
+fields:
+  19b07e91-6fff-4f1b-99d8-c068407945a4: # Artist Name
+    columnSuffix: ttzoxucl
+    contentColumnType: text
+    fieldGroup: null
+    handle: artistName
+    instructions: 'Write name here '
+    name: 'Artist Name'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: introName
+name: 'Intro Name'
+sortOrder: 1

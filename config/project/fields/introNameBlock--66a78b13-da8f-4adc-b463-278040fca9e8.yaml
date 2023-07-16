@@ -1,0 +1,16 @@
+columnSuffix: vtkvheep
+contentColumnType: string
+fieldGroup: 72dd30ae-32fb-4a41-a4de-ffd82a4c00fc # home
+handle: introNameBlock
+instructions: 'Write a name of an artist performing this year, this is an intro for the header. You can add up to 8 names!'
+name: 'Intro Name Block'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_intronameblock}}'
+  maxBlocks: 8
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

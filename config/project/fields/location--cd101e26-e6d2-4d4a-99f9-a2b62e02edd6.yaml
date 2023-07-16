@@ -1,0 +1,19 @@
+columnSuffix: jnykndpn
+contentColumnType: text
+fieldGroup: 1dcba13b-bf8d-414e-839a-eb1dfd1c13d6 # Common
+handle: location
+instructions: 'Write a location '
+name: location
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: 'Reykjavík, Iceland'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
