@@ -1,9 +1,9 @@
 columnSuffix: xiekszmz
 contentColumnType: text
 fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
-handle: dateYear
+handle: dateYearOne
 instructions: 'Write the date and year of the festival '
-name: 'Date Year'
+name: 'Date Year One'
 searchable: false
 settings:
   byteLimit: null

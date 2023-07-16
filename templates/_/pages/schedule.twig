@@ -8,12 +8,11 @@
 	<section class="container__schedule">
   	<h1>Schedule</h1>
 		<p class="schedule__intro">
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-		</p>
+			Find all the information regarding the lineup, performance timings, and additional information about the this years artists.	</p>
 		<section class="schedule">
 			<h2 class="hidden">The schedule</h2>
-			<button class="btn__schedule active">Saturday <br><span class="btn--date">{{entry.dateYear}}</span></button> {# add here#}
-			<button class="btn__schedule">Sunday <br><span class="btn--date">17/09, 2023</span></button>
+			<button class="btn__schedule active">Saturday <br><span class="btn--date">{{entry.dateYearOne}}</span></button> {# add here#}
+			<button class="btn__schedule">Sunday <br><span class="btn--date">{{entry.dateYearTwo}}</span></button>
 			<div class="stages__line"></div>
 			<div class="wrapper__stages">
 				<section class="stage stage__main">
@@ -49,5 +48,6 @@
 			</div>
 
 		</section>
+		<p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>
 	</section>
 {% endblock %}

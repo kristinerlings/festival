@@ -32,13 +32,25 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 8732b219-fd37-4636-8400-8ebb50f1b42a # Date Year
+            fieldUid: 8732b219-fd37-4636-8400-8ebb50f1b42a # Date Year One
             instructions: null
             label: null
             required: false
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 8e8a00ff-a44d-4cea-a6d1-06224b5b6135
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6d12b76c-0650-4cc5-8f77-108582bab4f9 # Date Year Two
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e45aea5-35c6-4772-965b-9a6795ba9864
             userCondition: null
             warning: null
             width: 100
