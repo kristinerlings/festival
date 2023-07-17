@@ -1,4 +1,4 @@
-dateModified: 1689553746
+dateModified: 1689615983
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -13,16 +13,23 @@ fs:
     url: '@web/assets/img'
 meta:
   __names__:
+    0cf0f2ac-21f3-4633-a67e-85c7d6cee899: 'Practical Block' # Practical Block
+    0d31a66f-ab58-4e79-838b-d39d2be1d9d2: 'Info Title' # Info Title
     1a8d3fa9-82a7-4684-bc8c-8054e8665b8f: Practical # Practical
     1dcba13b-bf8d-414e-839a-eb1dfd1c13d6: Common # Common
     2cfaf68a-146b-4d40-b7d9-c1f70a40cd11: Stage # Stage
     3ab0172f-fb89-41e3-a431-f39a192e79cc: Home # Home
     3d0f68aa-8059-4a85-8cd9-833c4f0e39dd: Artists # Artists
     3eb43c32-91df-4ed7-9d2a-45230c704919: Artists # Artists
+    3edb9326-b0e4-4e3e-b87b-13a87bfa7c77: 'Google Location' # Google Location
+    3f247eb5-b0ff-49cc-ad9b-7a005674cef1: 'External Link' # External Link
+    4e0f1a97-cc16-4c9b-b322-9892d6ba6ea4: image # image
     6d12b76c-0650-4cc5-8f77-108582bab4f9: 'Date Year Two' # Date Year Two
+    6e2adf2c-03e7-41ce-b313-d2235b4099e8: 'Info Title' # Info Title
     7ba36a44-66d8-48cf-abb7-4dbac9a804ae: 'Festival Date' # Festival Date
     7fb27517-c8be-46e4-b189-53fee60e4bfd: 'Artist Date' # Artist Date
     9daad15a-bb36-4771-9f6c-3b1dd16f1543: Uploads # Uploads
+    9f10c4cd-7d78-4f08-9710-bc80332c2314: 'Text Information' # Text Information
     17b2f273-58ce-4b03-854e-4f98b6e7a54d: web3-retake # web3-retake
     19b07e91-6fff-4f1b-99d8-c068407945a4: 'Artist Name' # Artist Name
     19bc3333-d1ef-45ec-8dd6-0c4510802dd9: Songs # Songs
@@ -34,21 +41,33 @@ meta:
     72dd30ae-32fb-4a41-a4de-ffd82a4c00fc: home # home
     73b77ca5-3c73-4fed-85c7-ea95ddb7f1a4: 'Day Two' # Day Two
     78fb5cea-0619-486b-bdc6-368195500948: year # year
+    85f696ba-e544-467c-bf66-8aab75b2cc6b: Tickets # Tickets
+    371a4406-c2f8-45b8-a96b-1fc8fc009aaa: 'Info Title' # Info Title
     0637d01f-a0c9-4fbd-beff-53a3031fd152: artists # artists
+    0927d7b1-b698-4f58-8f55-e8cd1fbd3789: CTA # CTA
     1284d164-214c-497a-a9ad-f9082785eb40: Schedule # Schedule
     1629e8c1-5690-4d8a-92cc-9b979aa26003: img # img
+    1881fe7a-74f3-4e97-91f0-bab84f7e2d3a: 'Sub Title ' # Sub Title 
     04614edc-2e8d-4213-abba-4792b0d46820: 'Artist Name' # Artist Name
     8732b219-fd37-4636-8400-8ebb50f1b42a: 'Date Year One' # Date Year One
+    401697fa-4956-4557-89d5-2bacae44e5ba: Paragraph # Paragraph
+    499217ea-eba3-446f-b611-c98ec43d93e8: paragraph # paragraph
     03189831-6d81-4cd9-8a8b-272986ab0e30: 'Tags Schedule' # Tags Schedule
     74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
+    a8c74836-66d5-4bad-9615-bb12c5c76f23: Paragraph # Paragraph
     b897e2b1-d4d5-4fb8-b4e6-debd0a228348: 'Artist Image' # Artist Image
     be98dd5a-0e66-4f97-9875-80d6f25b11f9: 'Artist Time' # Artist Time
     c908d6c4-9450-47ff-9859-5dadeacca604: schedule # schedule
     c85091e3-cc71-44d1-92dc-112b08b449d8: practical # practical
     c234393c-c53b-4616-88af-6231e1937139: Practical # Practical
     cd101e26-e6d2-4d4a-99f9-a2b62e02edd6: location # location
+    d0de8960-5a9e-4514-a296-2e5ca2d157d7: 'Information Block' # Information Block
+    e0bdf8a3-a733-4fed-87ec-ca7a66f4a8cb: 'Postal Code' # Postal Code
     e064fe9e-4239-4d29-a495-11bf1de288ba: logoName # logoName
+    e2c6adae-1a5b-4252-b544-dde08971a97b: 'Internal Link' # Internal Link
     e8803525-0da4-488a-9e15-fa60ab0cb39b: 'Intro Name' # Intro Name
+    ea8fcad2-6039-49a4-bd4c-bb63f198da5c: 'Img Description' # Img Description
+    ede29d11-325e-4d39-aa63-d27f8711b36a: Tickets # Tickets
     f047063f-e2e5-4dcc-aea7-6f6203d5cc6b: paragraph # paragraph
     f7c57978-e694-4ba9-8fc7-c4bb65e973c4: Logo # Logo
     fe37ed78-e85e-4fdb-8ac9-ed64637a7765: Home # Home

@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c85091e3-cc71-44d1-92dc-112b08b449d8 # practical
+handle: practicalBlock
+instructions: 'Add information for the practical page. '
+name: 'Practical Block'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_practicalblock}}'
+  maxBlocks: 10
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,0 +1,86 @@
+field: 0cf0f2ac-21f3-4633-a67e-85c7d6cee899 # Practical Block
+fieldLayouts:
+  209ff9eb-e097-4177-baa2-d02bf6770dca:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 499217ea-eba3-446f-b611-c98ec43d93e8 # paragraph
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a363a069-6790-406a-8feb-2779994416da
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 0d31a66f-ab58-4e79-838b-d39d2be1d9d2 # Info Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 83659de5-8faa-4834-bdf4-fd670a643850
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c56ee445-60ca-46d9-8cfe-49e963d5fdeb
+        userCondition: null
+fields:
+  0d31a66f-ab58-4e79-838b-d39d2be1d9d2: # Info Title
+    columnSuffix: hphvendl
+    contentColumnType: text
+    fieldGroup: null
+    handle: infoTitle
+    instructions: null
+    name: 'Info Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  499217ea-eba3-446f-b611-c98ec43d93e8: # paragraph
+    columnSuffix: afdkzbdq
+    contentColumnType: text
+    fieldGroup: null
+    handle: paragraph
+    instructions: 'Write information to display on your page'
+    name: paragraph
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: ''
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: textInformation
+name: 'Text Information'
+sortOrder: 2

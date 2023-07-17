@@ -1,0 +1,19 @@
+columnSuffix: hzkhgtrh
+contentColumnType: text
+fieldGroup: c85091e3-cc71-44d1-92dc-112b08b449d8 # practical
+handle: googleLocation
+instructions: 'Add the location link from Google maps'
+name: 'Google Location'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,124 @@
+@import url(reset.css);
+@import url(tokens.css);
+@import url(style.css);
+
+/*=========  Schedule    ============ */
+
+.practical__intro > h1 {
+  font-size: var(--font-size-l);
+  font-weight: var(--font-weight-bold);
+}
+
+.intro__howto > .btn__shedule--practical,
+.btn__buy,
+.btn__google {
+  text-transform: uppercase;
+  font-weight: var(--font-weight-bold);
+  cursor: pointer;
+  padding-block: 0.9rem;
+}
+
+.btn__shedule--practical {
+  background-color: var(--color-dark);
+  color: var(--color-white);
+  border: 1px solid var(--color-white);
+}
+
+.btn__buy {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
+
+.btn__google {
+  background-color: var(--color-pink);
+  color: var(--color-dark);
+}
+/* @media only screen and (max-height:390px) and (min-width: 844px) {
+
+  }
+} */
+
+@media only screen and (max-width: 391px) {
+  /* nav + main */
+  main {
+    max-width: 90%;
+    margin: 0 auto;
+    line-height: 1.4;
+  }
+  .nav__home {
+    display: none;
+  }
+  nav {
+    padding: 1rem 0.3rem;
+  }
+
+  nav .btn__tickets {
+    padding: 1rem;
+  }
+  .nav__logo {
+    max-width: 50%;
+    height: auto;
+  }
+
+  /**/
+
+  .practical__intro > h1 {
+    font-size: var(--font-size-m);
+    margin: 0.5rem 0rem;
+  }
+  .practical__intro > p {
+    font-size: 17px;
+  }
+
+  .yellow-title {
+    font-size: var(--font-size-l);
+    padding-block-start: 2rem;
+  }
+  /*howto - Address*/
+  .howto__list {
+    padding-block: 0.2rem;
+  }
+
+  .howto__list > li {
+    padding: 1.2rem 0rem;
+  }
+
+  .howto__list > li > h3 {
+    font-size: var(--font-size-m);
+    font-weight: var(--font-weight-bold);
+    padding-block-end: 0.3rem;
+  }
+  .intro__howto {
+    display: flex;
+    flex-direction: column;
+  }
+  .list__address p {
+    padding-block-end: 1.4rem;
+  }
+
+  .intro__howto > a {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    margin: 0rem 0rem 0.4rem;
+  }
+
+  /*the Do/dont's*/
+
+  .practical__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .content_title {
+    order: 1;
+  }
+  .content__img {
+    order: 2;
+    padding: .5rem 0rem;
+  }
+  .content__info{
+    order: 3;
+    padding: .5rem 0rem;
+  }
+}
