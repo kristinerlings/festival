@@ -454,14 +454,17 @@ header {
 }
 
 .btn__shedule {
-  background-color: var(--color-pink);
+  background-color: var(--color-dark);
   font-weight: var(--font-weight-semibold);
   padding-block: 0.5rem;
   max-width: 20rem;
+  color:var(--color-pink);
+  border: 1px solid var(--color-pink);
 }
 
 .btn__shedule:hover {
-  background-color: var(--color-yellow);
+  background-color: var(--color-pink);
+   color:var(--color-dark);
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
@@ -866,5 +869,14 @@ footer {
     /*    grid-row: 2/3; */
     align-self: center;
     justify-self: end;
+  }
+}
+@media only screen and (max-width: 615px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+   /*  width: 100%; */
   }
 }
