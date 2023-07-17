@@ -1,0 +1,19 @@
+columnSuffix: nihomebg
+contentColumnType: text
+fieldGroup: c85091e3-cc71-44d1-92dc-112b08b449d8 # practical
+handle: postalCode
+instructions: 'Write postal code and City'
+name: 'Postal Code'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: '104 Reykjavík'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText
