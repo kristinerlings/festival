@@ -81,6 +81,24 @@ fieldLayouts:
         name: Header
         uid: 00f1d1e7-2330-4384-9012-1bda49c90e87
         userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 22d3cc6d-d1ac-454d-8da7-0543cfa07462 # Partners Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b7448787-8329-49f7-9b57-67d8c8dbc833
+            userCondition: null
+            warning: null
+            width: 100
+        name: Partners
+        uid: 1fa4caaa-becc-4f10-af84-bfe733cfec92
+        userCondition: null
 handle: home
 hasTitleField: false
 name: Home

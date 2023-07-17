@@ -1,4 +1,4 @@
-dateModified: 1689522702
+dateModified: 1689553746
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -26,6 +26,7 @@ meta:
     17b2f273-58ce-4b03-854e-4f98b6e7a54d: web3-retake # web3-retake
     19b07e91-6fff-4f1b-99d8-c068407945a4: 'Artist Name' # Artist Name
     19bc3333-d1ef-45ec-8dd6-0c4510802dd9: Songs # Songs
+    22d3cc6d-d1ac-454d-8da7-0543cfa07462: 'Partners Block' # Partners Block
     48f68299-7e83-4700-aaed-af61a8c5eb43: 'Image Description' # Image Description
     50b36d0b-47fa-4167-bd65-d24edc1d65f0: Schedule # Schedule
     55df64a0-704c-4464-b38e-fdf99dcd207c: 'Day One' # Day One
@@ -35,6 +36,7 @@ meta:
     78fb5cea-0619-486b-bdc6-368195500948: year # year
     0637d01f-a0c9-4fbd-beff-53a3031fd152: artists # artists
     1284d164-214c-497a-a9ad-f9082785eb40: Schedule # Schedule
+    1629e8c1-5690-4d8a-92cc-9b979aa26003: img # img
     04614edc-2e8d-4213-abba-4792b0d46820: 'Artist Name' # Artist Name
     8732b219-fd37-4636-8400-8ebb50f1b42a: 'Date Year One' # Date Year One
     03189831-6d81-4cd9-8a8b-272986ab0e30: 'Tags Schedule' # Tags Schedule
@@ -45,8 +47,10 @@ meta:
     c85091e3-cc71-44d1-92dc-112b08b449d8: practical # practical
     c234393c-c53b-4616-88af-6231e1937139: Practical # Practical
     cd101e26-e6d2-4d4a-99f9-a2b62e02edd6: location # location
+    e064fe9e-4239-4d29-a495-11bf1de288ba: logoName # logoName
     e8803525-0da4-488a-9e15-fa60ab0cb39b: 'Intro Name' # Intro Name
     f047063f-e2e5-4dcc-aea7-6f6203d5cc6b: paragraph # paragraph
+    f7c57978-e694-4ba9-8fc7-c4bb65e973c4: Logo # Logo
     fe37ed78-e85e-4fdb-8ac9-ed64637a7765: Home # Home
 plugins:
   redactor:

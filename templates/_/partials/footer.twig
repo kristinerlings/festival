@@ -1,6 +1,36 @@
-<footer>
-  <ul>
-    <li><a href="{{siteUrl}}" class="nav__link">Home</a></li>
-    <li><a href="{{url('about')}}" class="nav__link">About</a></li>
+<footer class="footer">
+  <div class="footer__contact">
+		<a href="{{siteUrl}}" class="footer__logo"><img src="/public/logo.svg" alt="myrkva logo" ></a>
+    <h3 class="hidden">Find us</h3>
+		<ul class="contact__list">
+			<li>Engjavegur 7, Laugardalur</li>
+			<li>104 Reykjavík</li>
+			<li>Iceland</li>
+			<li><span class="bold">Email:</span> info@myrkvafestival.is</li>
+		</ul>
+	</div>
+  <div class="footer__nav">
+    <ul class="footer__links">
+      <li><a href="{{siteUrl}}" class="footer__link link__home">Home</a></li>
+      <li><a href="{{url('schedule')}}" class="footer__link link__schedule">Schedule</a></li>
+      <li><a href="{{url('practical')}}" class="footer__link link__practical">Practical</a></li>
+    </ul>
+    <p>Follow us</p>
+    <ul class="nav footer__social">
+      <li><a href="https://www.facebook.com/" class="nav__link social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.instagram.com/" class="nav__link social"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.twitter.com/" class="nav__link social"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.youtube.com/" class="nav__link social"><i class="fa fa-youtube-play" aria-hidden="true"></i></a></li>
+      <li><a href="https://www.spotify.com/" class="nav__link social"><i class="fa fa-spotify" aria-hidden="true"></i></a></li>
   </ul>
+  </div>
+  <div class="footer__apply">
+    <a href="{{url('tickets')}}" class="footer__link btn__tickets">Buy Tickets</a>
+    <div class="footer__lang">
+      <h4 class="lang hidden">Select a language:</h4>
+			<p class="lang-is">Íslenska</p>
+			<p class="lang-eng">English</p>
+		</div>
+  </div>
+
 </footer>
