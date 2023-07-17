@@ -1,0 +1,106 @@
+field: 22d3cc6d-d1ac-454d-8da7-0543cfa07462 # Partners Block
+fieldLayouts:
+  91e46fd7-f205-4980-b471-03bae0a3683d:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1629e8c1-5690-4d8a-92cc-9b979aa26003 # img
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5703f36f-15f0-4f6c-b4c8-72d347fbf846
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e064fe9e-4239-4d29-a495-11bf1de288ba # logoName
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a59b4921-20f1-45e3-98c3-60d87e7472df
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e6c1bfb1-e8a7-4af4-a951-ac83b7eecf98
+        userCondition: null
+fields:
+  1629e8c1-5690-4d8a-92cc-9b979aa26003: # img
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: img
+    instructions: 'Add an image of your partners logo'
+    name: img
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      allowSubfolders: false
+      allowUploads: true
+      allowedKinds: null
+      branchLimit: null
+      defaultUploadLocationSource: 'volume:9daad15a-bb36-4771-9f6c-3b1dd16f1543' # Uploads
+      defaultUploadLocationSubpath: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 15
+      minRelations: 1
+      previewMode: full
+      restrictFiles: false
+      restrictLocation: false
+      restrictedDefaultUploadSubpath: null
+      restrictedLocationSource: 'volume:9daad15a-bb36-4771-9f6c-3b1dd16f1543' # Uploads
+      restrictedLocationSubpath: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Asset
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\assets\AssetCondition
+      selectionLabel: null
+      showSiteMenu: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: list
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Assets
+  e064fe9e-4239-4d29-a495-11bf1de288ba: # logoName
+    columnSuffix: hfmbwfue
+    contentColumnType: text
+    fieldGroup: null
+    handle: logoName
+    instructions: 'Write the company/name that belongs to the logo. This will not be visible on the website. '
+    name: logoName
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: logo
+name: Logo
+sortOrder: 1

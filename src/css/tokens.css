@@ -2,17 +2,40 @@
   --color-dark: #252525;
   --color-pink: #f967e1;
   --color-yellow: #f6f967;
-  --color-white: #fbfbfb;
-  --color-white-darker: #f0f0f0;
+  --color-white: #ececec;
+  --color-white-darker: #e2e0e0;
+  --color-grey: #bcb2bb;
 
   --font-size-h1: 4.375rem; /*70px*/
-  --font-size-h2: 2.5rem; /*40px*/
-  --font-size-h3: 2.18rem; /*35px*/
+  /* --font-size-h2: 2.5rem; */ /*40px*/
+  --font-size-h2: clamp(
+    1.875rem,
+    calc(1.875rem + ((1vw - 0.245625rem) * 0.8937)),
+    2.5rem
+  );
+  /*40px*/
+
+  --font-size-h3: clamp(
+    1.625rem,
+    calc(1.625rem + ((1vw - 0.245625rem) * 0.8043)),
+    2.1875rem
+  ); /*35px*/
 
   --font-size-xs: 0.87rem; /* 14px */
-  --font-size-s: 1.125rem; /* 18px */
+  /* --font-size-s: 1.125rem;  */ /* 18px */
+  --font-size-s: clamp(
+    1rem,
+    calc(1rem + ((1vw - 0.245625rem) * 0.1787)),
+    1.125rem
+  );
+
   --font-size-m: 1.25rem; /*20px*/
-  --font-size-l: 1.87rem; /*30px*/
+  /* --font-size-l: 1.87rem;  */ /*30px*/
+  --font-size-l: clamp(
+    1.5625rem,
+    calc(1.5625rem + ((1vw - 0.245625rem) * 0.4468)),
+    1.875rem
+  );
 
   --font-weight-bold: 700;
   --font-weight-semibold: 600;

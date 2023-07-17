@@ -1,0 +1,23 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
+handle: dayTwo
+instructions: 'This tag is for artists who perform on day two'
+name: 'Day Two'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  localizeRelations: false
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: 'Day Two'
+  showSiteMenu: false
+  source: 'taggroup:03189831-6d81-4cd9-8a8b-272986ab0e30' # Tags Schedule
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: null
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Tags

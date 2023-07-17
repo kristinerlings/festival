@@ -4,13 +4,14 @@
 
 /*=========  Schedule    ============ */
 .container__schedule{
-  padding-block: 4rem;
-}
-.schedule {
+  padding-block: 4rem;  
   max-width: 85%;
   margin: 0 auto;
-  padding-block: 3rem;
 }
+.schedule {
+  padding-block: 3rem 1rem;
+}
+
 .container__schedule > h1{
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
@@ -21,18 +22,16 @@
 .schedule__intro{
   margin: 0 auto;
   text-align: center;
-  width: 50%;
+  width: 56%;
   line-height: 1.25;
-  color: var(--color-white);
-
+  color: var(--color-white-darker);
 }
 
 .wrapper__stages {
   display: flex;
   justify-content: center;
-  /*  border: 1px solid var(--color-white);
-  border-top: none;  */
 }
+
 .stages__line {
   padding: 0.5rem;
   background-color: var(--color-yellow);
@@ -81,7 +80,7 @@
   color: var(--color-white);
 }
 
-/*unique artist container*/
+/* =====  Artist Container  ====== */
 .schedule__artist {
   margin: 0.2rem 2rem;
   display: grid;
@@ -142,3 +141,23 @@
   -webkit-transition: all 0.5s ease;
 }
 /*artist container ends here*/
+
+
+.schedule__disclaimer{
+  font-weight: var(--font-weight-regular);
+  font-size: 17px;
+  color: #bcb2bb;
+  width: 50%;
+  text-align: end;
+  line-height: 1.25;
+  position: relative;
+  left: 50%;
+}
+
+
+
+
+
+/*=======================================
+       4.  Meida Queries / Responsive
+=========================================*/
