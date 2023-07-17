@@ -1,4 +1,4 @@
-dateModified: 1689615983
+dateModified: 1689624344
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -20,6 +20,7 @@ meta:
     2cfaf68a-146b-4d40-b7d9-c1f70a40cd11: Stage # Stage
     3ab0172f-fb89-41e3-a431-f39a192e79cc: Home # Home
     3d0f68aa-8059-4a85-8cd9-833c4f0e39dd: Artists # Artists
+    3d52ad1d-e1a5-48de-bdd3-dbe89f9adaac: 'Display Switch' # Display Switch
     3eb43c32-91df-4ed7-9d2a-45230c704919: Artists # Artists
     3edb9326-b0e4-4e3e-b87b-13a87bfa7c77: 'Google Location' # Google Location
     3f247eb5-b0ff-49cc-ad9b-7a005674cef1: 'External Link' # External Link
@@ -41,7 +42,6 @@ meta:
     72dd30ae-32fb-4a41-a4de-ffd82a4c00fc: home # home
     73b77ca5-3c73-4fed-85c7-ea95ddb7f1a4: 'Day Two' # Day Two
     78fb5cea-0619-486b-bdc6-368195500948: year # year
-    85f696ba-e544-467c-bf66-8aab75b2cc6b: Tickets # Tickets
     371a4406-c2f8-45b8-a96b-1fc8fc009aaa: 'Info Title' # Info Title
     0637d01f-a0c9-4fbd-beff-53a3031fd152: artists # artists
     0927d7b1-b698-4f58-8f55-e8cd1fbd3789: CTA # CTA
@@ -52,7 +52,9 @@ meta:
     8732b219-fd37-4636-8400-8ebb50f1b42a: 'Date Year One' # Date Year One
     401697fa-4956-4557-89d5-2bacae44e5ba: Paragraph # Paragraph
     499217ea-eba3-446f-b611-c98ec43d93e8: paragraph # paragraph
+    932691c9-9e52-42af-8bb8-c219d5ec45b5: 'Tickets Page' # Tickets Page
     03189831-6d81-4cd9-8a8b-272986ab0e30: 'Tags Schedule' # Tags Schedule
+    26774477-3cc4-408e-b3de-ab370d6be3c0: 'Tickets Page' # Tickets Page
     74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
     a8c74836-66d5-4bad-9615-bb12c5c76f23: Paragraph # Paragraph
     b897e2b1-d4d5-4fb8-b4e6-debd0a228348: 'Artist Image' # Artist Image
@@ -67,7 +69,6 @@ meta:
     e2c6adae-1a5b-4252-b544-dde08971a97b: 'Internal Link' # Internal Link
     e8803525-0da4-488a-9e15-fa60ab0cb39b: 'Intro Name' # Intro Name
     ea8fcad2-6039-49a4-bd4c-bb63f198da5c: 'Img Description' # Img Description
-    ede29d11-325e-4d39-aa63-d27f8711b36a: Tickets # Tickets
     f047063f-e2e5-4dcc-aea7-6f6203d5cc6b: paragraph # paragraph
     f7c57978-e694-4ba9-8fc7-c4bb65e973c4: Logo # Logo
     fe37ed78-e85e-4fdb-8ac9-ed64637a7765: Home # Home

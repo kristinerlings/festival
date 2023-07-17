@@ -53,10 +53,37 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 3d52ad1d-e1a5-48de-bdd3-dbe89f9adaac # Display Switch
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2079c9c2-e31b-49b1-908a-15dd584201de
+            userCondition: null
+            warning: null
+            width: 100
         name: Content
         uid: 60c2101b-3b70-4350-8556-22b8d2129a00
         userCondition: null
 fields:
+  3d52ad1d-e1a5-48de-bdd3-dbe89f9adaac: # Display Switch
+    columnSuffix: capcmawg
+    contentColumnType: boolean
+    fieldGroup: null
+    handle: displaySwitch
+    instructions: 'Choose how you want to display the content. By default, the image is on the left side, but you can switch it to the right side by turning on the switch. '
+    name: 'Display Switch'
+    searchable: false
+    settings:
+      default: false
+      offLabel: null
+      onLabel: reverse
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Lightswitch
   4e0f1a97-cc16-4c9b-b322-9892d6ba6ea4: # image
     columnSuffix: null
     contentColumnType: string

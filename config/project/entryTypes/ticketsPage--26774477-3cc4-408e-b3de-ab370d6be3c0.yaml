@@ -1,5 +1,5 @@
 fieldLayouts:
-  dac8a4aa-aa7f-4b6c-8e06-0b4fcf38e45b:
+  108737d2-acca-46fd-b99e-741ecafa68a9:
     tabs:
       -
         elementCondition: null
@@ -26,18 +26,18 @@ fieldLayouts:
             tip: null
             title: null
             type: craft\fieldlayoutelements\entries\EntryTitleField
-            uid: ab4b12cb-536b-4b51-b598-6d491848667c
+            uid: ae103e05-11ad-47b4-a590-50c1291efd68
             userCondition: null
             warning: null
             width: 100
         name: Content
-        uid: 9eb129bf-a1f6-41c2-b6ec-2370ca123c1b
+        uid: 47d8c7ae-3f77-4bf6-83c9-22bc64c9e560
         userCondition: null
-handle: tickets
-hasTitleField: true
-name: Tickets
-section: ede29d11-325e-4d39-aa63-d27f8711b36a # Tickets
+handle: ticketsPage
+hasTitleField: false
+name: 'Tickets Page'
+section: 932691c9-9e52-42af-8bb8-c219d5ec45b5 # Tickets Page
 sortOrder: 1
-titleFormat: null
+titleFormat: '{section.name|raw}'
 titleTranslationKeyFormat: null
 titleTranslationMethod: site

@@ -7,52 +7,56 @@
 {% block content %}
   <section class="container__practical">
     <section class="practical__intro">
-  	  <h1>{{entry.title}}</h1>
-		  <p>
-			We want to ensure that your experience with us is both unforgettable and hassle-free.  Here you can find comprehensive information about the festival's venue.
+  	  <h1>Practival Information</h1>
+		  <p class="intro__paragraph">
+			We want to ensure that your experience with us is both unforgettable and hassle-free. You can find information about the festival's venue here.
 		  </p>
       <div class="intro__howto">
-      <h2 class="yellow-title">How to get there?</h2>
-      <ul class="howto__list">
-        <li class="list__address">
-          <h3>Address</h3>
-          {#<p>{{ entry.address}}</p>#}
-          <p>Skautahöllin í Laugardal  Engjavegur 7, Laugardalur, 104 Reykjavík</p>
-          <a href="{{ entry.googleLocation}}" class="btn btn__google">Google Maps &#10142;</a>
-        </li>
-        <li>
-          <h3>By bus</h3>
-         {# <p> {{ entry.byBus}}</p>#}
-         <p>By Bus: The following bus stops close to  Skautahöllin í Laugardal  -Bus 49  -Bus 2</p>
-        </li>
-        <li>
-          <h3>Closest Airport</h3>
-          {#<p>{{ entry.closestAirport}}</p>#}
-          <p>Keflavík International Airport (50km)</p>
-          <p>Reykjavík Domestic Airport (5km)</p>
-        </li>
-      </ul>
-      <a href="{{url('schedule')}}" class="btn btn__shedule--practical">See the schedule</a>
-      <a href="{{url('tickets')}}" class="btn btn__buy">Buy Tickets</a>
-		</div>
+        <h2 class="yellow-title">How to get there?</h2>
+        <ul class="howto__list">
+          <li class="list__address">
+            <h3>Address</h3>
+            {#<p>{{ entry.address}}</p>#}
+            <p>Skautahöllin í Laugardal  Engjavegur 7, Laugardalur, 104 Reykjavík</p>
+            <a href="{{ entry.googleLocation}}" class="btn btn__google">Google Maps &#10142;</a>
+          </li>
+          <li>
+            <h3>By bus</h3>
+          {# <p> {{ entry.byBus}}</p>#}
+          <p> The following bus stops close to  Skautahöllin í Laugardal  -Bus 49  -Bus 2</p>
+          </li>
+          <li>
+            <h3>Closest Airport</h3>
+            {#<p>{{ entry.closestAirport}}</p>#}
+            <p>Keflavík International Airport (50km)</p>
+            <p>Reykjavík Domestic Airport (5km)</p>
+          </li>
+        </ul>
+        <div class="howto__btns">
+          <a href="{{url('schedule')}}" class="btn btn__shedule--practical">See the schedule</a>
+          <a href="{{url('tickets')}}" class="btn btn__buy">Buy Tickets</a>
+        </div>
+      </div>
    </section>
    
   {% for block in entry.practicalBlock %}
 		{% switch block.type %}
 		{% case 'informationBlock' %}
-   <section class="practical__content">
+   <section class="practical__content {% if block.displaySwitch %}reverse{% endif %}">
 			{% set asset = block.image.one() %}
 			{% if asset %}
-				<img class="content__img" src="{{ asset.getUrl({width:603, height:370 })}}" alt="{{block.imgDescription}}">
+				<img class="content__img" src="{{ asset.getUrl({width:536, height:329 })}}" alt="{{block.imgDescription}}">
 			{% endif %}
-      {% if block.infoTitle %}
-        <h2 class="content_title yellow-title">{{block.infoTitle}}</h2>
-      {% endif %}
-      {% if block.paragraph %}
-				<div class="content__info">
-         {{block.paragraph}}
-				</div>
-      {% endif %}
+      <div class="content__about">
+        {% if block.infoTitle %}
+          <h2 class="content_title yellow-title">{{block.infoTitle}}</h2>
+        {% endif %}
+        {% if block.paragraph %}
+				  <div class="content__text">
+          {{block.paragraph}}
+				  </div>
+        {% endif %}
+      </div>
    </section>
 
     {% case 'textInformation' %}

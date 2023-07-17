@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: tickets
-name: Tickets
+handle: ticketsPage
+name: 'Tickets Page'
 propagationMethod: all
 siteSettings:
   17b2f273-58ce-4b03-854e-4f98b6e7a54d: # web3-retake
     enabledByDefault: true
-    hasUrls: false
-    template: null
-    uriFormat: null
+    hasUrls: true
+    template: _/pages/tickets.twig
+    uriFormat: tickets
 type: single
