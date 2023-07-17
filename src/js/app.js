@@ -7,6 +7,7 @@ if (import.meta.hot) {
     console.log('HMR');
   });
 }
+console.log('app js works');
 
 // When the user scrolls the page, execute myFunction
 /* window.onscroll = function () {

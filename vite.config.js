@@ -27,7 +27,8 @@ export default ({ command }) => ({
     host: '0.0.0.0',
     strictPort: true,
     port: 3000,
-    origin: 'http://localhost:3000',
+    origin:
+      'https://web3-retake.ddev.site/:3000' /* 'http://localhost:3000', */,
   },
   plugins: [
     legacy({
