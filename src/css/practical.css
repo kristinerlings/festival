@@ -68,8 +68,7 @@
 }
 
 .faq__bg {
-  /*  background-image: url(../img/faq-bg.png); */
-  background-image: url(../img/faq-bg-6caaea47.png);
+  background-image: url(../img/faq-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }

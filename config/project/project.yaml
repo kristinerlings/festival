@@ -1,4 +1,4 @@
-dateModified: 1689624344
+dateModified: 1689640663
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -14,6 +14,7 @@ fs:
 meta:
   __names__:
     0cf0f2ac-21f3-4633-a67e-85c7d6cee899: 'Practical Block' # Practical Block
+    0d0a56b8-7ea2-4d38-8c5d-8882bd58658a: 'Background Image' # Background Image
     0d31a66f-ab58-4e79-838b-d39d2be1d9d2: 'Info Title' # Info Title
     1a8d3fa9-82a7-4684-bc8c-8054e8665b8f: Practical # Practical
     1dcba13b-bf8d-414e-839a-eb1dfd1c13d6: Common # Common
@@ -57,6 +58,7 @@ meta:
     26774477-3cc4-408e-b3de-ab370d6be3c0: 'Tickets Page' # Tickets Page
     74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
     a8c74836-66d5-4bad-9615-bb12c5c76f23: Paragraph # Paragraph
+    a2831566-85f2-494b-9bd2-dd9f7ef49df5: 'Hero Image' # Hero Image
     b897e2b1-d4d5-4fb8-b4e6-debd0a228348: 'Artist Image' # Artist Image
     be98dd5a-0e66-4f97-9875-80d6f25b11f9: 'Artist Time' # Artist Time
     c908d6c4-9450-47ff-9859-5dadeacca604: schedule # schedule
