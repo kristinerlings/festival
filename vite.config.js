@@ -13,7 +13,7 @@ export default ({ command }) => ({
   base: command === 'serve' ? '' : '/dist/',
   build: {
     manifest: true,
-    outDir: './web/dist/',
+    outDir: 'web/dist/',
     rollupOptions: {
       input: {
         app: './src/js/app.js',
