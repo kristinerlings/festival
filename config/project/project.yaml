@@ -1,4 +1,4 @@
-dateModified: 1689640663
+dateModified: 1689698125
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -69,6 +69,7 @@ meta:
     e0bdf8a3-a733-4fed-87ec-ca7a66f4a8cb: 'Postal Code' # Postal Code
     e064fe9e-4239-4d29-a495-11bf1de288ba: logoName # logoName
     e2c6adae-1a5b-4252-b544-dde08971a97b: 'Internal Link' # Internal Link
+    e6d27095-a402-4ed1-88ef-3a907df5594f: 'Background Switch' # Background Switch
     e8803525-0da4-488a-9e15-fa60ab0cb39b: 'Intro Name' # Intro Name
     ea8fcad2-6039-49a4-bd4c-bb63f198da5c: 'Img Description' # Img Description
     f047063f-e2e5-4dcc-aea7-6f6203d5cc6b: paragraph # paragraph
