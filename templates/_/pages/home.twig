@@ -6,7 +6,9 @@
 {% endblock %}
 
 {% block content %}
-	<header class="bleed">
+
+	{# {% set heroImage = entry.heroImage.first() %} #}
+	<header class="bleed" {# style="background-image: url('{{ heroImage.url() }}' #}>
 		<div class="header wrapper__non--bleed">
 			<h1 class="header__title"><span class="header__year">{{entry.year}}</span> Myrkva Festival</h1>
 			<h3 class="header__location">{{entry.location}}</h3>
@@ -78,7 +80,8 @@
 			{% endfor %} 
 		</div>
 	</section>
-	<section class="container__partners">
+	<section class="container__partners" style="background-image: url(../public/faq-bg.png);
+">
 		<h2>Our Partners</h2>
 		<div class="partners__logo">
 		{% for block in entry.partnersBlock %}
