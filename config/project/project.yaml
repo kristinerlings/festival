@@ -1,4 +1,4 @@
-dateModified: 1689698125
+dateModified: 1689952374
 email:
   fromEmail: kristin.erlingsdottir@student.howest.be
   fromName: web3-retake
@@ -38,10 +38,11 @@ meta:
     22d3cc6d-d1ac-454d-8da7-0543cfa07462: 'Partners Block' # Partners Block
     48f68299-7e83-4700-aaed-af61a8c5eb43: 'Image Description' # Image Description
     50b36d0b-47fa-4167-bd65-d24edc1d65f0: Schedule # Schedule
-    55df64a0-704c-4464-b38e-fdf99dcd207c: 'Day One' # Day One
+    55df64a0-704c-4464-b38e-fdf99dcd207c: 'Schedule Tag' # Schedule Tag
     66a78b13-da8f-4adc-b463-278040fca9e8: 'Intro Name Block' # Intro Name Block
     72dd30ae-32fb-4a41-a4de-ffd82a4c00fc: home # home
-    73b77ca5-3c73-4fed-85c7-ea95ddb7f1a4: 'Day Two' # Day Two
+    73b77ca5-3c73-4fed-85c7-ea95ddb7f1a4: 'Stage Tag' # Stage Tag
+    76efc9e8-7db8-47fa-911a-ac6355ec1bb6: 'Performance Time' # Performance Time
     78fb5cea-0619-486b-bdc6-368195500948: year # year
     371a4406-c2f8-45b8-a96b-1fc8fc009aaa: 'Info Title' # Info Title
     0637d01f-a0c9-4fbd-beff-53a3031fd152: artists # artists
@@ -51,13 +52,15 @@ meta:
     1881fe7a-74f3-4e97-91f0-bab84f7e2d3a: 'Sub Title ' # Sub Title 
     04614edc-2e8d-4213-abba-4792b0d46820: 'Artist Name' # Artist Name
     8732b219-fd37-4636-8400-8ebb50f1b42a: 'Date Year One' # Date Year One
+    56749b77-0824-4ec0-8f67-d8f4453fbb5d: daySwitch # daySwitch
     401697fa-4956-4557-89d5-2bacae44e5ba: Paragraph # Paragraph
     499217ea-eba3-446f-b611-c98ec43d93e8: paragraph # paragraph
     932691c9-9e52-42af-8bb8-c219d5ec45b5: 'Tickets Page' # Tickets Page
-    03189831-6d81-4cd9-8a8b-272986ab0e30: 'Tags Schedule' # Tags Schedule
+    03189831-6d81-4cd9-8a8b-272986ab0e30: tags # tags
     26774477-3cc4-408e-b3de-ab370d6be3c0: 'Tickets Page' # Tickets Page
     74433564-87e3-4279-bddf-f2e72f868d5b: web3-retake # web3-retake
     a8c74836-66d5-4bad-9615-bb12c5c76f23: Paragraph # Paragraph
+    a349ec6f-07c4-4259-9663-719e3a1bc98d: 'background image' # background image
     a2831566-85f2-494b-9bd2-dd9f7ef49df5: 'Hero Image' # Hero Image
     b897e2b1-d4d5-4fb8-b4e6-debd0a228348: 'Artist Image' # Artist Image
     be98dd5a-0e66-4f97-9875-80d6f25b11f9: 'Artist Time' # Artist Time

@@ -32,7 +32,6 @@ const pageDetector = () => {
 }
  */
 
-
 const init = () => {
   pageDetector();
 };
