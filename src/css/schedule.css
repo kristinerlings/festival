@@ -3,8 +3,8 @@
 @import url(tokens.css);
 
 /*=========  Schedule    ============ */
-.container__schedule{
-  padding-block: 4rem;  
+.container__schedule {
+  padding-block: 4rem;
   max-width: 85%;
   margin: 0 auto;
 }
@@ -12,14 +12,14 @@
   padding-block: 3rem 1rem;
 }
 
-.container__schedule > h1{
+.container__schedule > h1 {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
   color: var(--color-white);
   text-align: center;
   padding: 2rem 0rem 1rem;
 }
-.schedule__intro{
+.schedule__intro {
   margin: 0 auto;
   text-align: center;
   width: 56%;
@@ -27,7 +27,7 @@
   color: var(--color-white-darker);
 }
 
-.wrapper__stages {
+/* .wrapper__stages {
   display: flex;
   justify-content: center;
 }
@@ -35,7 +35,7 @@
 .stages__line {
   padding: 0.5rem;
   background-color: var(--color-yellow);
-}
+} */
 
 /*===== BTNS =====*/
 .btn__schedule {
@@ -46,17 +46,16 @@
   font-size: var(--font-size-s);
   padding-block: 0.2rem;
   border-radius: 8px;
-  margin: .5rem .2rem .5rem 0rem
-  ;
+  margin: 0.5rem 0.2rem 0.5rem 0rem;
   width: 13rem;
   text-transform: uppercase;
   align-self: end;
 }
 
-.active{
+.active {
   background-color: var(--color-pink);
   color: var(--color-white);
-  border:none;
+  border: none;
 }
 
 .btn--date {
@@ -142,8 +141,7 @@
 }
 /*artist container ends here*/
 
-
-.schedule__disclaimer{
+.schedule__disclaimer {
   font-weight: var(--font-weight-regular);
   font-size: 17px;
   color: #bcb2bb;
@@ -154,10 +152,63 @@
   left: 50%;
 }
 
-
-
-
-
 /*=======================================
        4.  Meida Queries / Responsive
 =========================================*/
+
+@media only screen and (min-width: 1001px) {
+  .wrapper__stages {
+    display: flex;
+    justify-content: center;
+  }
+
+  .stages__line {
+    padding: 0.5rem;
+    background-color: var(--color-yellow);
+  }
+}
+
+/*max*/
+@media only screen and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 400px) {
+  /* //adjust width of container? */
+  .container__schedule {
+    max-width: 98%;
+  }
+
+  .container__schedule > h1 {
+    font-size: var(--font-size-m);
+    padding-block-end: 0.4rem;
+  }
+
+  .schedule__intro {
+    width: 100%;
+    text-align: left;
+    line-height: 1.4;
+  }
+  /* 
+//container for buttons and stages 
+.schedule{}
+
+//btns container
+.schedule__toggle{}
+
+.btn__schedule{}
+
+ .wrapper__stages {
+  display: flex;
+  justify-content: center;
+}
+
+.stages__line {
+  padding: 0.5rem;
+  background-color: var(--color-yellow);
+}
+
+//no hover effect anymore and white bg + add arrow?
+.schedule__artist{}
+
+*/
+}
