@@ -93,7 +93,7 @@
   }
 }
 
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 926px) {
   .reverse {
     display: flex;
     flex-direction: row-reverse;
@@ -188,15 +188,15 @@
   }
 }
 
-@media only screen and (max-width: 900px/* 391px */) {
+@media only screen and (max-width: 927px/* 391px */) {
   main {
     max-width: 90%;
     margin: 0 auto;
     line-height: 1.4;
   }
-}
+  /* }
 
-@media only screen and (max-width: 600px/* 391px */) {
+@media only screen and (max-width: 600px) { */
   /* nav + main */
   /* main {
     max-width: 90%;
@@ -236,11 +236,11 @@
   }
   /*howto - Address*/
   .howto__list {
-    padding-block: 0.2rem;
+    padding: 0.2rem;
   }
 
   .howto__list > li {
-    padding: 1.2rem 0rem;
+    padding: 1.2rem;
   }
 
   .howto__list > li > h3 {
@@ -287,5 +287,9 @@
   .btn__buy,
   .btn__google {
     padding-block: 0.9rem;
+  }
+
+  .practical__info{
+    padding-block: 1rem 2rem;
   }
 }
