@@ -156,7 +156,7 @@
        4.  Meida Queries / Responsive
 =========================================*/
 
-@media only screen and (min-width: 1001px) {
+@media only screen and (min-width: 1003px) {
   .wrapper__stages {
     display: flex;
     justify-content: center;
@@ -168,11 +168,7 @@
   }
 }
 
-/*max*/
-@media only screen and (max-width: 1000px) {
-}
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1002px) {
   /* //adjust width of container? */
   .container__schedule {
     max-width: 98%;
@@ -205,6 +201,10 @@
     text-align: center;
     padding: 0rem;
     margin-block-start: 1rem;
+  }
+
+  .stage__day.hidden {
+    display: flex;
   }
 
   .stage > p {
@@ -275,9 +275,30 @@
     padding-block: 0.5rem;
   }
 }
+@media only screen and (min-width: 601px) and (max-width: 1003px) {
+  .container__schedule {
+    max-width: 70%;
+  }
+
+  .schedule__artist {
+    grid-template-columns: 30% 60% 10%;
+  }
+}
 
 @media only screen and (min-width: 505px) and (max-width: 600px) {
   .schedule__artist {
     grid-template-columns: 25% 65% 10%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .schedule__artist > h4 {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .schedule__artist {
+    grid-template-columns: 40% 50% 10%;
   }
 }

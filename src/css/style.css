@@ -869,8 +869,11 @@ footer {
   }
 }
 
-@media only screen and (max-width: 390px) {
- /*  .nav__logo > img {
-    width: 80%;
-  } */
+@media only screen and (max-width: 410px) {
+  .img__logo {
+    max-width: 90%;
+  }
+  li > .btn__tickets {
+    display: block;
+  }
 }
