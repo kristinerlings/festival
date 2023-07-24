@@ -24,6 +24,7 @@
     <div class="wrapper__stages">
         <section class="stage stage__main">
             <h2>Main stage:</h2>
+            <p>Saturday 16.sept {# {{entry.btnDate}} #}</p>
 
             {% for artist in artists %}
 
@@ -34,6 +35,7 @@
                         {% for photo in artist.artistImage.all() %}
                           <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
                         {% endfor %}
+                        <p class="schedule__arrow hidden">&#8250;</p>
                       </article>
                     </a>
    
@@ -43,6 +45,7 @@
 
         <section class="stage stage__z">
             <h2>Stage Z:</h2>
+            <p>Saturday 16.sept</p>
 
             {% for artist in artists %} 
         
@@ -53,6 +56,7 @@
                         {% for photo in artist.artistImage.all() %}
                           <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
                         {% endfor %}
+                        <p class="schedule__arrow hidden">&#8250;</p>
                       </article>
                     </a>
             {% endfor %}
