@@ -1,0 +1,14 @@
+columnSuffix: akdwzkfs
+contentColumnType: boolean
+fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
+handle: daySwitch
+instructions: 'Which day does the artist perform on? Saturday or sunday?'
+name: daySwitch
+searchable: false
+settings:
+  default: false
+  offLabel: Saturday
+  onLabel: Sunday
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Lightswitch

@@ -8,7 +8,7 @@
   <section class="container__practical">
     <div class="bleed practical__bleed">
     <section class="practical__intro wrapper__non--bleed">
-  	  <h1>Practival Information</h1>
+  	  <h1>Practical Information</h1>
 		  <p class="intro__paragraph">
 			We want to ensure that your experience with us is both unforgettable and hassle-free. You can find information about the festival's venue here.
 		  </p>
@@ -62,7 +62,7 @@
    </section>
 
     {% case 'textInformation' %}
-   <section class="bleed practical__faq faq__bg">
+   <section class="bleed practical__faq {% if block.backgroundSwitch %} faq__bg {% endif %}">
     <div class="wrapper__non--bleed">
        {% if block.infoTitle %}
           <h2 class="content_title yellow-title">{{block.infoTitle}}</h2>
