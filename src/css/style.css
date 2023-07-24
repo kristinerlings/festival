@@ -489,6 +489,7 @@ header {
   height: 100%;
   padding-inline: 1.5rem;
   align-self: flex-end;
+  line-height: 1.4;
 }
 
 .info__time {
@@ -523,6 +524,7 @@ header {
   width: 50%;
   height: 100%;
   object-fit: cover;
+  border-radius: 4px;
   /*   margin-inline-end: 1rem; */
 }
 
@@ -756,6 +758,81 @@ footer {
   .header__ticket > h2 {
     font-size: 1.2rem;
   }
+
+  /*Detailpage Artists*/
+
+  .detailpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 2rem auto 0rem;
+  }
+  .detailpage__info {
+    /*   padding-inline: 1rem; */
+    /*  align-self: flex-end; */
+  }
+
+  .info__time {
+  }
+
+  .info__stage {
+    padding-block: 0.75rem;
+  }
+
+  .info__name {
+    font-size: var(--font-size-h3);
+    font-weight: var(--font-weight-bold);
+    padding-block-end: 0.5rem;
+  }
+  .info__songs {
+    font-weight: var(--font-weight-bold);
+    font-family: var(--ff-dosis);
+  }
+
+  .info__about {
+    padding-block-start: 2rem;
+    line-height: 1.4;
+  }
+
+  .detailpage__img {
+    padding-inline: 1.7rem;
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+  }
+
+  .detailpage__info {
+    display: flex;
+    flex-direction: column;
+  }
+  .info__name {
+    order: -3;
+    font-size: 30px;
+    padding: 1rem 0rem 0.5rem;
+  }
+  .info__stage {
+    order: -2;
+    font-size: 16px;
+    padding: 0rem;
+  }
+  .info__time {
+    order: -1;
+    font-size: 20px;
+  }
+
+  .info__name,
+  .info__stage,
+  .info__time {
+    align-self: center;
+  }
+  .info__songs {
+    padding-block-start: 1rem;
+  }
+  .info__about {
+    padding: 0.4rem;
+  }
 }
 
 @media only screen and (max-width: 867px) {
@@ -777,6 +854,7 @@ footer {
     flex-wrap: wrap;
     gap: 0.8rem;
     justify-content: space-between;
+    padding-block: 5rem;
   }
   .footer__apply {
     display: flex;
@@ -789,6 +867,10 @@ footer {
     padding: 0rem 0rem 0rem 1rem;
   }
 }
+
+/* @media only screen and (max-width: 770px) {
+  
+} */
 
 @media only screen and (max-width: 755px) {
   .header__title {
@@ -813,7 +895,8 @@ footer {
 }
 
 @media only screen and (max-width: 653px) {
-  .footer__social {
+  .footer {
+    padding-block-start: 2.2rem;
   }
 }
 
@@ -866,6 +949,25 @@ footer {
     /*    grid-row: 2/3; */
     align-self: center;
     justify-self: end;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  .detailpage__img,
+  .detailpage__info {
+    width: 100%;
+    padding-inline: 0rem;
+  }
+
+  .detailpage__img {
+    height: 10rem;
+  }
+
+  .container__detailpage {
+    padding-block: 2rem;
+  }
+  .detailpage {
+    margin-block: 1.1rem;
   }
 }
 

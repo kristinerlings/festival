@@ -150,6 +150,7 @@
   line-height: 1.25;
   position: relative;
   left: 50%;
+  padding-block-start: 1rem;
 }
 
 /*=======================================
