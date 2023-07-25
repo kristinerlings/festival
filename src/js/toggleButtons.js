@@ -56,18 +56,18 @@ const updateSchedule = () => {
 const init = () => {
   $btnSaturday.addEventListener('click', () => {
     selectedDay = 'saturday';
-    $btnSaturday.classList.add('active');
+    $btnSaturday.classList.add('active__day');
     $scheduleDay.classList.add('saturday');
-    $btnSunday.classList.remove('active');
+    $btnSunday.classList.remove('active__day');
     $scheduleDay.classList.remove('sunday');
     updateSchedule();
   });
 
   $btnSunday.addEventListener('click', () => {
     selectedDay = 'sunday';
-    $btnSunday.classList.add('active');
+    $btnSunday.classList.add('active__day');
     $scheduleDay.classList.add('sunday');
-    $btnSaturday.classList.remove('active');
+    $btnSaturday.classList.remove('active__day');
     $scheduleDay.classList.remove('saturday');
     updateSchedule();
   });

@@ -15,8 +15,8 @@
     
     <section class="schedule">
 			<div class="schedule__toggle">
-      	<button class="btn__schedule btn__saturday {% if not entry.daySwitch %} active {% endif %}" data-day="saturday">Saturday</button>
-      	<button class="btn__schedule btn__sunday {% if entry.daySwitch %} active {% endif %}" data-day="sunday">Sunday</button>
+      	<button class="btn__schedule btn__saturday {% if not entry.daySwitch %} active__day {% endif %}" data-day="saturday">Saturday</button>
+      	<button class="btn__schedule btn__sunday {% if entry.daySwitch %} active__day {% endif %}" data-day="sunday">Sunday</button>
     	</div>
       <h2 class="hidden">The schedule</h2>
 			<div class="stages__line"></div>

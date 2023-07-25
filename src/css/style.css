@@ -25,15 +25,12 @@
   font-style: normal;
 }
 
-
-
 /* @font-face {
   font-family: 'ClashDisplay-Extralight';
   src: url('../fonts/ClashDisplay-Extralight.otf') format('opentype');
   font-display: swap;
   font-style: normal;
 } */
-
 
 /*=======================================
       1. Global Style
@@ -56,7 +53,6 @@ body {
   background-color: var(--color-dark); /*  rgb(154, 185, 156); */
   color: var(--color-white);
 }
-
 
 /*=======================================
        3.  Layout
@@ -139,6 +135,13 @@ nav {
   justify-content: center;
 }
 
+li.set__active a {
+  color: var(--color-pink);
+  font-weight: var(--font-weight-semibold);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+}
+
 /* .nav > li{
   padding-inline: 0.5rem;
 } */
@@ -172,22 +175,9 @@ nav {
   z-index: 1000;
 }
 
-/* Active page */
-
-.link__home:is(:link, :active, :visited).active {
-  color: var(--color-pink);
-}
-
-.link__practical:is(:link, :active, :visited).active {
-  color: var(--color-pink);
-}
-
-.link__schedule:is(:link, :active, :visited).active {
-  color: var(--color-pink);
-}
 /**/
-.link__practical{
-  margin-inline-end: .4rem;
+.link__practical {
+  margin-inline-end: 0.4rem;
 }
 .btn__tickets {
   background-color: var(--color-yellow);
@@ -625,8 +615,6 @@ footer {
   cursor: pointer;
 }
 
-
-
 .footer__social {
   border-top: 1px solid var(--color-white);
   padding-block: 1rem;
@@ -649,6 +637,35 @@ footer {
 }
 
 .lang-eng {
+  color: var(--color-pink);
+}
+
+.btn__tickets:hover {
+  color: var(--color-dark);
+}
+
+/* Ticket page */
+.container__tickets {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+}
+
+.container__tickets > h1 {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+  font-family: var(--ff-monterrat);
+  padding-block: 1rem;
+}
+
+.container__tickets > p:first-of-type {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  padding-block-end: 1rem;
   color: var(--color-pink);
 }
 
@@ -978,6 +995,15 @@ footer {
   }
   .detailpage {
     margin-block: 1.1rem;
+  }
+
+  .container__tickets > p:first-of-type {
+    font-size: var(--font-size-h2);
+    padding-block-end: 0.3rem;
+  }
+  .container__tickets {
+    max-width: 70%;
+    margin: 0 auto;
   }
 }
 

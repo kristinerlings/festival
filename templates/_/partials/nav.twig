@@ -1,3 +1,4 @@
+{% set currentUrl = craft.app.request.url %}
 <nav id="navbar">
  <ul class="nav nav__social">
     <li><a href="https://www.facebook.com/" class="nav__link social"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
@@ -8,9 +9,9 @@
  </ul>
  <a href="{{siteUrl}}" class="nav nav__logo"><img class="img__logo" src="{{ siteUrl }}public/logo.svg" alt="myrkva logo" width="113" height="41"></a>
  <ul class="nav">
-    <li><a href="{{siteUrl}}" class="nav__link nav__home">Home</a></li>
-    <li><a href="{{url('schedule')}}" class="nav__link link__schedule">Schedule</a></li>
-    <li><a href="{{url('practical')}}" class="nav__link link__practical">Practical</a></li>
+    <li class="{{ currentUrl == '/' ? 'set__active' : '' }}"><a href="{{siteUrl}}" class="nav__link nav__home">Home</a></li>
+    <li class="{{ currentUrl == '/schedule' ? 'set__active' : '' }}"><a href="{{url('schedule')}}" class="nav__link link__schedule">Schedule</a></li>
+    <li class="{{ currentUrl == '/practical' ? 'set__active' : '' }}"><a href="{{url('practical')}}" class="nav__link link__practical">Practical</a></li>
     <li><a href="{{url('tickets')}}" class="nav__link btn__tickets">Tickets</a></li>
  </ul>
 </nav>

@@ -58,6 +58,12 @@
   border: none;
 }
 
+.active__day {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  border: none;
+}
+
 .btn--date {
   text-transform: lowercase;
   font-size: 16px;
