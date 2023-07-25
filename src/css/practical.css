@@ -16,7 +16,12 @@
   font-weight: var(--font-weight-bold);
   cursor: pointer;
 }
-
+.btn__google:hover {
+  background-color: var(--color-dark);
+  color: var(--color-pink);
+  transition: all 0.3s ease-in-out;
+  
+}
 .practical__bleed {
   background-image: url(../img/practical-bg.png);
   background-repeat: no-repeat;
@@ -289,7 +294,7 @@
     padding-block: 0.9rem;
   }
 
-  .practical__info{
+  .practical__info {
     padding-block: 1rem 2rem;
   }
 }

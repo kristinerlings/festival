@@ -1,14 +1,3 @@
-const activeLink = window.location.pathname;
-
-const $nav = document.querySelectorAll('nav a');
-
-const pageDetector = () => {
-  $nav.forEach((link) => {
-    if (link.getAttribute('href') === activeLink) {
-      link.classList.add('active');
-    }
-  });
-};
 
 // When the user scrolls the page, execute myFunction
 /* window.onscroll = function () {
@@ -32,7 +21,7 @@ const pageDetector = () => {
  */
 
 const init = () => {
-  pageDetector();
+
 };
 
 init();

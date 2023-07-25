@@ -80,19 +80,23 @@
 			{% endfor %} 
 		</div>
 	</section>
-	<section class="container__partners">
-		<h2>Our Partners</h2>
-		<div class="partners__logo">
-		{% for block in entry.partnersBlock %}
-			{% switch block.type %}
-				{% case 'logo' %} 
-				{% set asset = block.img.one() %}
-				{% if asset %}
-					<img class="partners__img" src="{{ asset.getUrl({width: 135, height:99})}}" alt="{{block.logoName}}">
-				{% endif %}
-			{% endswitch %}
-		{% endfor %}
+
+	<section class="container__partners wrapper__non--bleed">
+		<h2 class="yellow-title">Our Partners</h2>
+		<div class="wrapper--partners bleed">
+			<div class="partners__logo wrapper__non--bleed">
+			{% for block in entry.partnersBlock %}
+				{% switch block.type %}
+					{% case 'logo' %} 
+					{% set asset = block.img.one() %}
+					{% if asset %}
+						<img class="partners__img" src="{{ asset.getUrl({width: 135, height:99})}}" alt="{{block.logoName}}">
+					{% endif %}
+				{% endswitch %}
+			{% endfor %}
+			</div>
 		</div>
 	</section>
+
 
 {% endblock %}
