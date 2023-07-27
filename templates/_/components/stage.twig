@@ -1,4 +1,5 @@
 
+ {% set artists = craft.entries.section('artists').all() %}
 {% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day) %}
 
 {% for artist in artistsByStageAndDay %}
