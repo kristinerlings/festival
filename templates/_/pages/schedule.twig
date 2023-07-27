@@ -1,7 +1,6 @@
 {% extends "_/layouts/base" %}
 
 {% block head %}
-  {{ craft.vite.script("src/js/activeLink.js") }}
   {{ craft.vite.script("src/js/toggleButtons.js") }}
 {% endblock %}
 
@@ -15,8 +14,8 @@
     
     <section class="schedule">
       <div class="schedule__toggle">
-        <button class="btn__schedule btn__saturday {% if not entry.daySwitch %}active__day{% endif %}" data-day="saturday">Saturday</button>
-        <button class="btn__schedule btn__sunday {% if entry.daySwitch %}active__day{% endif %}" data-day="sunday">Sunday</button>
+        <button class="btn__schedule btn__saturday active__day"> Saturday</button>
+        <button class="btn__schedule btn__sunday">Sunday</button>
       </div>
       <h2 class="hidden">The schedule</h2>
       <div class="stages__line"></div>
@@ -27,57 +26,31 @@
 
 
       <div class="wrapper__stages">
-        {% if not entry.daySwitch %}
-
-          {# Display content for Saturday #}
-          <section class="stage stage__main" id="saturday">
+          <section class="stage stage__main" id="saturday-main">
             <h2>Main stage:</h2>
-            {# {% set artists = craft.entries.section('artists').all() %}
-            {% set daySlug = entry.daySwitch ? 'sunday' : 'saturday' %}
-            {% set dayTitle = entry.daySwitch ? 'Sunday 16.sept' : 'Saturday 16.sept' %}
-            
-            {% include "_/components/stage.twig" with { day: dayTitle, daySlug: daySlug, artists: artists } %} #}
+            <p class="stage__day hidden">Saturday 16.sept</p>
             {% include "_/components/stage.twig" with { stage: mainStageSlug, day: 'saturday', artists: artists } %}
-            
-
           </section>
 
-          <section class="stage stage__z" id="saturday">
+          <section class="stage stage__z" id="saturday-z">
             <h2>Stage Z:</h2>
             <p class="stage__day hidden">Saturday 16.sept</p>
             {% include "_/components/stage.twig" with { stage: stageZSlug, day: 'saturday', artists: artists } %}
-            {# {% for artist in artists %}
-              {% set stageCategory = artist.stageCategory.one() %}
-              {% set dayCategory = artist.dayCategory.one() %}
-              {% if stageCategory.slug == 'stage-z' and dayCategory.slug == 'saturday' %}
-                <a href="{{ artist.url }}">
-                  <article class="schedule__artist">
-                    <h4>{{ artist.artistName }}</h4>
-                    <p>{{ artist.performanceTime|date('h:i A') }}</p>
-                    {% for photo in artist.artistImage.all() %}
-                      <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
-                    {% endfor %}
-                    <p class="schedule__arrow hidden">&#8250;</p>
-                  </article>
-                </a>
-              {% endif %}
-            {% endfor %} #}
           </section>
-        {% else %}
+
           {# Sunday #}
-          <section class="stage stage__main" id="sunday">
-            <h2>Stage Z:</h2>
-            <p class="stage__day hidden">Saturday 17.sept</p>
+          <section class="stage stage__main" id="sunday-main">
+            <h2>Main stage:</h2>
+            <p class="stage__day hidden">Sunday 17.sept</p>
             {% include "_/components/stage.twig" with { stage: mainStageSlug, day: 'sunday', artists: artists } %}
           </section>
 
-          <section class="stage stage__z" id="sunday">
+          <section class="stage stage__z" id="sunday-z">
             <h2>Stage Z:</h2>
-            <p class="stage__day hidden">Saturday 17.sept</p>
+            <p class="stage__day hidden">Sunday 17.sept</p>
             {% include "_/components/stage.twig" with { stage: stageZSlug, day: 'sunday', artists: artists } %}
           </section>
 
-        {% endif %}
       </div>
       <p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>
     </section>

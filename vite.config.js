@@ -18,7 +18,6 @@ export default ({ command }) => ({
       input: {
         app: './src/js/app.js',
         countdown: './src/js/countdown.js',
-        pageDetector: './src/js/activeLink.js',
         toggleButtons: './src/js/toggleButtons.js',
         nav: './src/js/nav.js',
       },

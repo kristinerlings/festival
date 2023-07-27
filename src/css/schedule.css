@@ -3,6 +3,10 @@
 @import url(tokens.css);
 
 /*=========  Schedule    ============ */
+#hidden{
+  display: none;
+}
+
 .container__schedule {
   padding-block: 4rem;
   max-width: 85%;
