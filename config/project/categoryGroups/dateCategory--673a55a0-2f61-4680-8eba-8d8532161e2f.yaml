@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  4be19feb-4c9f-4185-be53-3a66a2707940:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: cbe77756-5e8f-4771-b4da-c2b74cadc986
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a66825c6-a941-4e34-90ef-e5ac533b62b4
+        userCondition: null
+handle: dateCategory
+name: 'Date Category'
+siteSettings:
+  17b2f273-58ce-4b03-854e-4f98b6e7a54d: # web3-retake
+    hasUrls: true
+    template: _/pages/category.twig
+    uriFormat: 'schedule/{slug}'
+structure:
+  maxLevels: null
+  uid: a9551543-ac1d-40b8-a99c-23213808ebba

@@ -685,6 +685,13 @@ footer {
        4.  Meida Queries / Responsive
 =========================================*/
 
+
+ @media (prefers-reduced-motion){
+   .header__names {
+    animation: none;
+    }
+  }
+
 @media only screen and (max-width: 1512px) {
 }
 

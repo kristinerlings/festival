@@ -1,8 +1,8 @@
 {% extends "_/layouts/base" %}
 
 {% block head %}
- {{ craft.vite.script("src/js/activeLink.js") }}
- {{ craft.vite.script("src/js/toggleButtons.js") }}
+  {{ craft.vite.script("src/js/activeLink.js") }}
+  {{ craft.vite.script("src/js/toggleButtons.js") }}
 {% endblock %}
 
 {% block content %}
@@ -14,56 +14,69 @@
     </p>
     
     <section class="schedule">
-			<div class="schedule__toggle">
-      	<button class="btn__schedule btn__saturday {% if not entry.daySwitch %} active__day {% endif %}" data-day="saturday">Saturday</button>
-      	<button class="btn__schedule btn__sunday {% if entry.daySwitch %} active__day {% endif %}" data-day="sunday">Sunday</button>
-    	</div>
+      <div class="schedule__toggle">
+        <button class="btn__schedule btn__saturday {% if not entry.daySwitch %}active__day{% endif %}" data-day="saturday">Saturday</button>
+        <button class="btn__schedule btn__sunday {% if entry.daySwitch %}active__day{% endif %}" data-day="sunday">Sunday</button>
+      </div>
       <h2 class="hidden">The schedule</h2>
-			<div class="stages__line"></div>
- {% set artists = craft.entries.section('artists').all() %}
-    <div class="wrapper__stages">
-        <section class="stage stage__main">
+      <div class="stages__line"></div>
+
+      {% set artists = craft.entries.section('artists').all() %}
+
+      <div class="wrapper__stages">
+        {% if not entry.daySwitch %}
+          {# Display content for Saturday #}
+          <section class="stage stage__main">
             <h2>Main stage:</h2>
             <p class="stage__day hidden">Saturday 16.sept {# {{entry.btnDate}} #}</p>
 
             {% for artist in artists %}
-
-                    <a href="{{ artist.url }}">
-                      <article class="schedule__artist" {# data-schedule="{{ artist.daySwitch }} #}>
-                        <h4>{{ artist.artistName }}</h4>
-                        <p>{{ artist.performanceTime|date('h:i A') }}</p>
-                        {% for photo in artist.artistImage.all() %}
-                          <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
-                        {% endfor %}
-                        <p class="schedule__arrow hidden">&#8250;</p>
-                      </article>
-                    </a>
-   
+              {% set stageCategory = artist.stageCategory.one() %}
+              {% set dayCategory = artist.dayCategory.one() %}
+              {% if stageCategory.slug == 'main-stage' and dayCategory.slug == 'saturday' %}
+                <a href="{{ artist.url }}">
+                  <article class="schedule__artist">
+                    <h4>{{ artist.artistName }}</h4>
+                    <p>{{ artist.performanceTime|date('h:i A') }}</p>
+                    {% for photo in artist.artistImage.all() %}
+                      <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
+                    {% endfor %}
+                    <p class="schedule__arrow hidden">&#8250;</p>
+                  </article>
+                </a>
+              {% endif %}
             {% endfor %}
 
-        </section>
+          </section>
 
-        <section class="stage stage__z">
+          <section class="stage stage__z">
             <h2>Stage Z:</h2>
             <p class="stage__day hidden">Saturday 16.sept</p>
 
-            {% for artist in artists %} 
-        
-                   <a href="{{ artist.url }}">
-                      <article class="schedule__artist">
-                        <h4>{{ artist.artistName }}</h4>
-                        <p>{{ artist.performanceTime|date('h:i A') }}</p>
-                        {% for photo in artist.artistImage.all() %}
-                          <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
-                        {% endfor %}
-                        <p class="schedule__arrow hidden">&#8250;</p>
-                      </article>
-                    </a>
+            {% for artist in artists %}
+              {% set stageCategory = artist.stageCategory.one() %}
+              {% set dayCategory = artist.dayCategory.one() %}
+              {% if stageCategory.slug == 'stage-z' and dayCategory.slug == 'saturday' %}
+                <a href="{{ artist.url }}">
+                  <article class="schedule__artist">
+                    <h4>{{ artist.artistName }}</h4>
+                    <p>{{ artist.performanceTime|date('h:i A') }}</p>
+                    {% for photo in artist.artistImage.all() %}
+                      <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
+                    {% endfor %}
+                    <p class="schedule__arrow hidden">&#8250;</p>
+                  </article>
+                </a>
+              {% endif %}
             {% endfor %}
-
-        </section>
-    </div>
-    <p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>
+          </section>
+        {% else %}
+          {# Sunday #}
+         
+        {% endif %}
+      </div>
+      <p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>
+    </section>
   </section>
 		
 {% endblock %}
