@@ -28,24 +28,12 @@
           {# Display content for Saturday #}
           <section class="stage stage__main">
             <h2>Main stage:</h2>
-            <p class="stage__day hidden">Saturday 16.sept {# {{entry.btnDate}} #}</p>
-
-            {% for artist in artists %}
-              {% set stageCategory = artist.stageCategory.one() %}
-              {% set dayCategory = artist.dayCategory.one() %}
-              {% if stageCategory.slug == 'main-stage' and dayCategory.slug == 'saturday' %}
-                <a href="{{ artist.url }}">
-                  <article class="schedule__artist">
-                    <h4>{{ artist.artistName }}</h4>
-                    <p>{{ artist.performanceTime|date('h:i A') }}</p>
-                    {% for photo in artist.artistImage.all() %}
-                      <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
-                    {% endfor %}
-                    <p class="schedule__arrow hidden">&#8250;</p>
-                  </article>
-                </a>
-              {% endif %}
-            {% endfor %}
+            {% set artists = craft.entries.section('artists').all() %}
+            {% set daySlug = entry.daySwitch ? 'sunday' : 'saturday' %}
+            {% set dayTitle = entry.daySwitch ? 'Sunday 16.sept' : 'Saturday 16.sept' %}
+            
+            {% include "_/components/stage.twig" with { day: dayTitle, daySlug: daySlug, artists: artists } %}
+            
 
           </section>
 
