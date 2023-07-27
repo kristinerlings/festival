@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
-handle: stageTag
-instructions: 'Which stage does the artist perform on? stage-main or stage-z'
-name: 'Stage Tag'
+handle: stageCategory
+instructions: 'Stage name '
+name: 'Stage Category'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,12 +12,12 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionLabel: stage-main
+  selectionLabel: 'Add a stage name '
   showSiteMenu: true
-  source: 'taggroup:03189831-6d81-4cd9-8a8b-272986ab0e30' # tags
+  source: 'group:884355f6-0b7e-408f-836b-6c73dda355df' # Stage Category
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Tags
+type: craft\fields\Categories

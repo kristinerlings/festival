@@ -134,6 +134,30 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 85656535-fe16-43ea-841d-3e3096b3a0d9 # Stage Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 96563e0a-9546-48af-bbc1-65c444083b4e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2aa7cba2-2957-41db-8aaf-e644e02d8933 # Day Category
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3e73a25f-020e-4dbb-8ae2-1b69bdebdb38
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 76efc9e8-7db8-47fa-911a-ac6355ec1bb6 # Performance Time
             instructions: null
             label: null
@@ -141,30 +165,6 @@ fieldLayouts:
             tip: null
             type: craft\fieldlayoutelements\CustomField
             uid: 1cca005e-0311-4d71-a118-29e141517646
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 55df64a0-704c-4464-b38e-fdf99dcd207c # Schedule Tag
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3a327e34-d92f-43ef-8236-13f579f322c6
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
-            fieldUid: 73b77ca5-3c73-4fed-85c7-ea95ddb7f1a4 # Stage Tag
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 3dd6e1e5-0847-4939-9dfa-6bd251b11390
             userCondition: null
             warning: null
             width: 100

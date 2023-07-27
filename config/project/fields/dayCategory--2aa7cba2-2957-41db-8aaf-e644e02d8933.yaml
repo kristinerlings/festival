@@ -1,9 +1,9 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: c908d6c4-9450-47ff-9859-5dadeacca604 # schedule
-handle: scheduleTag
-instructions: 'Which day is does the performance take place? '
-name: 'Schedule Tag'
+handle: dayCategory
+instructions: 'Categorize the artists performance date '
+name: 'Day Category'
 searchable: false
 settings:
   allowSelfRelations: false
@@ -12,12 +12,12 @@ settings:
   maintainHierarchy: false
   maxRelations: null
   minRelations: null
-  selectionLabel: saturday
+  selectionLabel: null
   showSiteMenu: true
-  source: 'taggroup:03189831-6d81-4cd9-8a8b-272986ab0e30' # tags
+  source: 'group:673a55a0-2f61-4680-8eba-8d8532161e2f' # Date Category
   targetSiteId: null
   validateRelatedElements: false
   viewMode: null
 translationKeyFormat: null
 translationMethod: site
-type: craft\fields\Tags
+type: craft\fields\Categories

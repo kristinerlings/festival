@@ -1,0 +1,46 @@
+defaultPlacement: end
+fieldLayouts:
+  f48e9ff6-1a18-4cd9-bfcc-74cab3b1a722:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: 80b97a32-4b97-43db-8cb6-61042627e199
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 144f6ebc-df2f-4658-b1a5-582a5c6fcf63
+        userCondition: null
+handle: stageCategory
+name: 'Stage Category'
+siteSettings:
+  17b2f273-58ce-4b03-854e-4f98b6e7a54d: # web3-retake
+    hasUrls: true
+    template: _/pages/schedule.twig
+    uriFormat: 'schedule/{slug}'
+structure:
+  maxLevels: 2
+  uid: a91c42bf-967b-40b6-b7fb-1d4d4d477f9d
