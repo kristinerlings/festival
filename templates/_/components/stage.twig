@@ -1,21 +1,3 @@
-{# <p class="stage__day hidden">Saturday 16.sept #} {# {{entry.btnDate}} #{# }</p> #}
-
-   {#          {% for artist in artists %}
-              {% set stageCategory = artist.stageCategory.one() %}
-              {% set dayCategory = artist.dayCategory.one() %}
-              {% if stageCategory.slug == 'main-stage' and dayCategory.slug == 'saturday' %}
-                <a href="{{ artist.url }}">
-                  <article class="schedule__artist">
-                    <h4>{{ artist.artistName }}</h4>
-                    <p>{{ artist.performanceTime|date('h:i A') }}</p>
-                    {% for photo in artist.artistImage.all() %}
-                      <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
-                    {% endfor %}
-                    <p class="schedule__arrow hidden">&#8250;</p>
-                  </article>
-                </a>
-              {% endif %}
-            {% endfor %} #}
 
 {% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day) %}
 
