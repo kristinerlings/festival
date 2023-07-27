@@ -22,26 +22,31 @@
       <div class="stages__line"></div>
 
       {% set artists = craft.entries.section('artists').all() %}
+      {% set mainStageSlug = 'main-stage' %}
+      {% set stageZSlug = 'stage-z' %}
+
 
       <div class="wrapper__stages">
         {% if not entry.daySwitch %}
+
           {# Display content for Saturday #}
-          <section class="stage stage__main">
+          <section class="stage stage__main" id="saturday">
             <h2>Main stage:</h2>
-            {% set artists = craft.entries.section('artists').all() %}
+            {# {% set artists = craft.entries.section('artists').all() %}
             {% set daySlug = entry.daySwitch ? 'sunday' : 'saturday' %}
             {% set dayTitle = entry.daySwitch ? 'Sunday 16.sept' : 'Saturday 16.sept' %}
             
-            {% include "_/components/stage.twig" with { day: dayTitle, daySlug: daySlug, artists: artists } %}
+            {% include "_/components/stage.twig" with { day: dayTitle, daySlug: daySlug, artists: artists } %} #}
+            {% include "_/components/stage.twig" with { stage: mainStageSlug, day: 'saturday', artists: artists } %}
             
 
           </section>
 
-          <section class="stage stage__z">
+          <section class="stage stage__z" id="saturday">
             <h2>Stage Z:</h2>
             <p class="stage__day hidden">Saturday 16.sept</p>
-
-            {% for artist in artists %}
+            {% include "_/components/stage.twig" with { stage: stageZSlug, day: 'saturday', artists: artists } %}
+            {# {% for artist in artists %}
               {% set stageCategory = artist.stageCategory.one() %}
               {% set dayCategory = artist.dayCategory.one() %}
               {% if stageCategory.slug == 'stage-z' and dayCategory.slug == 'saturday' %}
@@ -56,11 +61,22 @@
                   </article>
                 </a>
               {% endif %}
-            {% endfor %}
+            {% endfor %} #}
           </section>
         {% else %}
           {# Sunday #}
-         
+          <section class="stage stage__main" id="sunday">
+            <h2>Stage Z:</h2>
+            <p class="stage__day hidden">Saturday 17.sept</p>
+            {% include "_/components/stage.twig" with { stage: mainStageSlug, day: 'sunday', artists: artists } %}
+          </section>
+
+          <section class="stage stage__z" id="sunday">
+            <h2>Stage Z:</h2>
+            <p class="stage__day hidden">Saturday 17.sept</p>
+            {% include "_/components/stage.twig" with { stage: stageZSlug, day: 'sunday', artists: artists } %}
+          </section>
+
         {% endif %}
       </div>
       <p class="schedule__disclaimer">&#42;Please note that the schedule is subject to change. Any updates or modifications will be announced through our official festival app and on-site information boards.</p>

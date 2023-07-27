@@ -32,6 +32,8 @@ const $btnSunday = document.querySelector('.btn__sunday');
 /* const $scheduleMain = document.querySelector('.stage__main');
 const $scheduleZ = document.querySelector('.stage__z'); */
 const $scheduleDay = document.querySelector('.wrapper__stages');
+const $saturday = document.getElementById('saturday');
+const $sunday = document.getElementById('sunday');
 
 let selectedDay = 'saturday'; //default day
 
@@ -57,18 +59,24 @@ const init = () => {
   $btnSaturday.addEventListener('click', () => {
     selectedDay = 'saturday';
     $btnSaturday.classList.add('active__day');
-    $scheduleDay.classList.add('saturday');
+    /* $scheduleDay.classList.add('saturday'); */
     $btnSunday.classList.remove('active__day');
-    $scheduleDay.classList.remove('sunday');
+    $btnSaturday.classList.add('active__day');
+     $saturday.classList.remove('hidden');
+     $sunday.classList.add('hidden');
+   
+
     updateSchedule();
   });
 
   $btnSunday.addEventListener('click', () => {
     selectedDay = 'sunday';
     $btnSunday.classList.add('active__day');
-    $scheduleDay.classList.add('sunday');
+    /*  $scheduleDay.classList.add('sunday'); */
     $btnSaturday.classList.remove('active__day');
-    $scheduleDay.classList.remove('saturday');
+    /*  $scheduleDay.classList.remove('saturday'); */
+    $saturday.classList.add('hidden');
+    $sunday.classList.remove('hidden');
     updateSchedule();
   });
 
