@@ -40,7 +40,7 @@
    </section>
    </div>
    
-  {% for block in entry.practicalBlock %}
+  {% for block in entry.practicalBlock|raw({'class':'redactor-content' }) %}
 		{% switch block.type %}
 		{% case 'informationBlock' %}
    <section class="practical__content {% if block.displaySwitch %}reverse{% endif %}">

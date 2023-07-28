@@ -3,7 +3,7 @@
 @import url(tokens.css);
 
 /*=========  Schedule    ============ */
-#hidden{
+#hidden {
   display: none;
 }
 
@@ -303,8 +303,12 @@
 }
 
 @media only screen and (max-width: 400px) {
+
   .schedule__artist > h4 {
     font-size: 18px;
+  }
+  .stage > h2 {
+    text-align: left;
   }
 }
 
