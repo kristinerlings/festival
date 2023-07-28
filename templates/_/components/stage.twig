@@ -2,6 +2,12 @@
  {% set artists = craft.entries.section('artists').all() %}
 {% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day) %}
 
+{# {% set startTime = '2023-09-16 12:00:00' %}
+{% set endTime = '2023-09-17 04:00:00' %}
+ #}
+{# {% set filteredArtists = artistsByStageAndDay|filter(artist => artist.performanceTime >= startTime and artist.performanceTime <= endTime) %}
+ #}
+
 {% for artist in artistsByStageAndDay %}
   <a href="{{ artist.url }}">
     <article class="schedule__artist">

@@ -6,9 +6,9 @@ instructions: 'Determine the date and time the performance takes place'
 name: 'Performance Time'
 searchable: false
 settings:
-  max: null
-  min: null
-  minuteIncrement: 10
+  max: '2023-09-17T00:00:00-07:00'
+  min: '2023-09-16T00:00:00-07:00'
+  minuteIncrement: 30
   showDate: true
   showTime: true
   showTimeZone: false

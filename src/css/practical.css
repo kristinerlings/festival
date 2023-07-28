@@ -2,6 +2,40 @@
 @import url(tokens.css);
 @import url(style.css);
 
+.practical__content ul, .practical__faq ul {
+  list-style-type: disc; /* Or "circle" or "square" */
+  margin-block-end: 1rem;
+}
+.practical__content strong, .practical__faq strong, .intro__howto strong{
+  font-weight: var(--font-weight-bold);
+}
+
+.practical__content h1, .practical__faq h1, .intro__howto h1{
+  font-size: var(--font-size-h1);
+}
+
+.practical__content h2, .practical__faq h2, .intro__howto h2{
+  font-size: var(--font-size-h2);
+}
+
+.practical__content h3, .practical__faq h3, .intro__howto h3{
+  font-size: var(--font-size-h3);
+}
+
+.practical__content h4, .practical__faq h4, .intro__howto h4{
+  font-size: var(--font-size-l);
+}
+
+.practical__content h5, .practical__faq h5, .intro__howto h5{
+  font-size: var(--font-size-m);
+}
+
+/* Additional style for list items inside the Redactor editor */
+.practical__content li {
+  margin-inline-start: 1rem;
+  padding-block: 0.1rem;
+}
+
 /*=========  Practical    ============ */
 
 .practical__intro > h1 {
@@ -20,7 +54,6 @@
   background-color: var(--color-dark);
   color: var(--color-pink);
   transition: all 0.3s ease-in-out;
-  
 }
 .practical__bleed {
   background-image: url(../img/practical-bg.png);
