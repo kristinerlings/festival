@@ -65,7 +65,7 @@
 			<a href="{{url('schedule')}}" class="btn btn__shedule">See festival schedule</a>
 		</div>
 		<div class="lineup__artists">
-			{% set artists = craft.entries.section('artists').all() %}
+			{% set artists = craft.entries.section('artists').limit(4).all() %}
 				{% for artist in artists %}
 				<a href="{{artist.url}}">
 					<article class="lineup__artist">
