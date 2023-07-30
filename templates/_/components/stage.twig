@@ -11,8 +11,8 @@
 {% for artist in artistsByStageAndDay %}
   <a href="{{ artist.url }}">
     <article class="schedule__artist">
-      <h4>{{ artist.artistName }}</h4>
-      <p>{{ artist.performanceTime|date('h:i A') }}</p>
+      <h4>{{ artist.title }}</h4>
+      <p>{{ artist.artistTime }}</p>
       {% for photo in artist.artistImage.all() %}
         <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
       {% endfor %}
