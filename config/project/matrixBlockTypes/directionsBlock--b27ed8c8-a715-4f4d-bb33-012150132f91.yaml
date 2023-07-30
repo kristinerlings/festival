@@ -1,0 +1,145 @@
+field: 359e2e19-bb0c-490c-90e3-59c8d753d6ae # How To Block
+fieldLayouts:
+  0b691f39-501f-4099-bdba-cf387b412c9b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 77ffdb5b-2c1e-4ab7-8153-93245c93482b # Directions Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: df6b83d5-ecba-4996-9bca-bff01b1a7671
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: fc9aab61-a005-47b5-9c98-6fed2baa808e # Text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ff76bb1b-06da-4af4-9b58-936f2b094b5c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 8cac9422-893a-441a-b267-ddecf7c9cbab # button CTA
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 29370677-5dab-4b50-ac04-9285835d39a5
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 25983bae-9697-484a-87e0-a489fb2763e1 # button link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e70de56d-7bb7-4614-8c8c-15b5a0083abe
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4c00214f-62a0-4f38-8ad6-f9181b4f739e
+        userCondition: null
+fields:
+  8cac9422-893a-441a-b267-ddecf7c9cbab: # button CTA
+    columnSuffix: koetmzes
+    contentColumnType: string(800)
+    fieldGroup: null
+    handle: buttonCta
+    instructions: 'Write the call to action for your button here'
+    name: 'button CTA'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 200
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  77ffdb5b-2c1e-4ab7-8153-93245c93482b: # Directions Title
+    columnSuffix: rolckpig
+    contentColumnType: string(120)
+    fieldGroup: null
+    handle: directionsTitle
+    instructions: 'Write the title'
+    name: 'Directions Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: 30
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  25983bae-9697-484a-87e0-a489fb2763e1: # button link
+    columnSuffix: jgkgktar
+    contentColumnType: string(255)
+    fieldGroup: null
+    handle: buttonLink
+    instructions: 'Paste the link here to the external sources you want to direct to'
+    name: 'button link'
+    searchable: false
+    settings:
+      maxLength: 255
+      types:
+        - url
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\Url
+  fc9aab61-a005-47b5-9c98-6fed2baa808e: # Text 
+    columnSuffix: cyygjjyd
+    contentColumnType: text
+    fieldGroup: null
+    handle: text
+    instructions: 'Write the content here'
+    name: 'Text '
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      columnType: text
+      configSelectionMode: choose
+      defaultTransform: ''
+      manualConfig: ''
+      purifierConfig: null
+      purifyHtml: true
+      redactorConfig: null
+      removeEmptyTags: false
+      removeInlineStyles: false
+      removeNbsp: false
+      showHtmlButtonForNonAdmins: false
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      uiMode: enlarged
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\redactor\Field
+handle: directionsBlock
+name: Directions
+sortOrder: 1

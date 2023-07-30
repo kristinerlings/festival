@@ -32,6 +32,18 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
+            fieldUid: 359e2e19-bb0c-490c-90e3-59c8d753d6ae # How To Block
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: ad2affcc-e59e-4e97-883b-93744e8b1e3e
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: 0cf0f2ac-21f3-4633-a67e-85c7d6cee899 # Practical Block
             instructions: null
             label: null

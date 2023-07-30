@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: c85091e3-cc71-44d1-92dc-112b08b449d8 # practical
+handle: howToBlock
+instructions: 'Add information on how to get to the festival '
+name: 'How To Block'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_howtoblock}}'
+  maxBlocks: 3
+  minBlocks: 1
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
