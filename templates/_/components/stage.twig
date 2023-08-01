@@ -1,6 +1,11 @@
-
- {% set artists = craft.entries.section('artists').all() %}
-{% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day) %}
+{# 
+{% block head %}
+ {{ craft.vite.script("src/js/sortTime.js" ) }}
+{% endblock %}
+  #}
+ 
+ {% set artists = craft.entries.section('artists').orderBy('performanceTime').all() %}
+{% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day)|sort((a, b) => (a.performanceTime|date('U') > b.performanceTime|date('U')) ? 1 : -1) %}
 
 {# {% set startTime = '2023-09-16 12:00:00' %}
 {% set endTime = '2023-09-17 04:00:00' %}
@@ -9,10 +14,10 @@
  #}
 
 {% for artist in artistsByStageAndDay %}
-  <a href="{{ artist.url }}">
+  <a class="schedule__artistlink" href="{{ artist.url }}">
     <article class="schedule__artist">
       <h4>{{ artist.title }}</h4>
-      <p>{{ artist.artistTime }}</p>
+      <p><time datetime="{{ artist.performanceTime ? artist.performanceTime|date('Y-m-d H:i:s') : '' }}">{{ artist.artistTime }}</time></p>
       {% for photo in artist.artistImage.all() %}
         <img class="schedule__img" src="{{ photo.getUrl({ width: 103, height: 65 }) }}" alt="{{ artist.artistName }}" />
       {% endfor %}
