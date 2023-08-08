@@ -5,11 +5,11 @@
   line-height: 1.5;
 }
 .list__address > p > strong {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
 }
 
 .list__address > p > strong > span {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--color-pink);
 }
 
