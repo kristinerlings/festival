@@ -145,6 +145,10 @@
   .practical__bleed {
     background-image: none;
   }
+  .btn__google,
+  .howto__btns {
+    display: none;
+  }
 
   .practical__intro {
     padding-block: 2rem;
@@ -190,7 +194,8 @@
     padding-inline-start: 2rem;
   }
 
-  .content__text, .practical__info {
+  .content__text,
+  .practical__info {
     max-width: 70%;
     line-height: 1.2;
     font-size: 12px;

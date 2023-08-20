@@ -743,7 +743,7 @@ footer {
 
 @media print {
   .container__nav,
-  a,
+
   header,
   button,
   footer,
@@ -818,6 +818,10 @@ footer {
     padding-block-start: 0rem;
   }
 }
+
+
+
+
 
 @media (prefers-reduced-motion) {
   .header__names {

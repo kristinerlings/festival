@@ -215,9 +215,23 @@
     font-weight: var(--font-weight-bold);
     padding: 0.5rem;
   }
+  .stage__day {
+    display: block;
+  }
   .stage > h2 {
+    font-size: 18px;
+    color: var(--color-dark);
+  }
+  /*   .schedule__img {
+    visibility: visible;
+    display: block;
+  } */
+  .schedule__artist > h4 {
     font-size: 14px;
     color: var(--color-dark);
+  }
+  .schedule__artist > p > time {
+    font-size: 12px;
   }
 }
 
