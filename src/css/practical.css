@@ -135,12 +135,10 @@
   background-size: cover;
 }
 
-/*MEDIA QUERIES*/
+/* ============== MEDIA QUERIES ===============*/
 
-/* @media only screen and (max-height:390px) and (min-width: 844px) {
 
-  }
-} */
+
 @media only screen and (min-width: 830px) and (max-width: 1158px) {
   .btn__google {
     font-size: var(--font-size-xs);

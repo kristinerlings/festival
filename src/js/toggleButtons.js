@@ -23,6 +23,10 @@ const updateSchedule = () => {
   }
 };
 
+
+ 
+ 
+
 const init = () => {
   $btnSaturday.addEventListener('click', () => {
     if (!$btnSaturday.classList.contains('active__day')) {
@@ -38,7 +42,8 @@ const init = () => {
       $btnSaturday.classList.remove('active__day');
       updateSchedule();
     }
-  });
+  
+  }); 
 };
 
 init();
