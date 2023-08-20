@@ -136,8 +136,71 @@
 }
 
 /* ============== MEDIA QUERIES ===============*/
+@media print {
+  .container__practical {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .practical__bleed {
+    background-image: none;
+  }
 
+  .practical__intro {
+    padding-block: 2rem;
+  }
+  .practical__intro.wrapper__non--bleed,
+  .practical__faq > .wrapper__non--bleed {
+    max-width: 100%;
+  }
 
+  .intro__paragraph {
+    padding-block: 0.5rem;
+    width: 50%;
+  }
+  .intro__howto {
+    padding-block: 1rem;
+  }
+
+  .intro__howto > h2,
+  .content__about > h2,
+  .content_title,
+  .yellow-title {
+    padding-block: 2rem 0.8rem;
+    font-size: 18px;
+    color: var(--color-dark);
+  }
+
+  .list__address > h3 {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .list__address > p {
+    width: 40%;
+  }
+
+  /* Practical content*/
+  .content__img {
+    max-width: 30%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .content__about {
+    padding-inline-start: 2rem;
+  }
+
+  .content__text, .practical__info {
+    max-width: 70%;
+    line-height: 1.2;
+    font-size: 12px;
+  }
+
+  .practical__faq {
+    line-height: 1.2;
+    width: 70%;
+  }
+}
 
 @media only screen and (min-width: 830px) and (max-width: 1158px) {
   .btn__google {
@@ -303,6 +366,7 @@
     display: flex;
     flex-direction: column;
   }
+
   .content_title {
     order: 1;
   }

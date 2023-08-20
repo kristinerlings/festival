@@ -171,7 +171,9 @@
   .container__schedule > h1,
   .schedule__intro {
     text-align: left;
+    color: var(--color-dark);
   }
+
   /* p - text intro*/
   .schedule__intro {
     width: 60%;
@@ -182,6 +184,8 @@
     left: 0%;
     font-size: 12px;
     width: 60%;
+    color: var(--color-dark);
+    line-height: 1.2;
   }
 
   .wrapper__stages {
@@ -200,14 +204,20 @@
 
   #saturday-main:before {
     content: 'Saturday';
+    font-size: 14px;
     font-weight: var(--font-weight-bold);
-    padding: 0.5rem 0rem;
+    padding: 0.5rem;
   }
 
   #sunday-main:before {
     content: 'Sunday';
+    font-size: 14px;
     font-weight: var(--font-weight-bold);
-    padding: 0.5rem 0rem;
+    padding: 0.5rem;
+  }
+  .stage > h2 {
+    font-size: 14px;
+    color: var(--color-dark);
   }
 }
 
