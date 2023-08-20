@@ -77,7 +77,8 @@ a {
   color: var(--color-white);
 }
 
-.hidden {
+.hidden,
+.nav__print {
   display: none;
 }
 
@@ -510,10 +511,15 @@ header {
   background-color: var(--color-dark);
   border: 1px solid var(--color-white);
 }
+.btn__back:hover {
+  background-color: var(--color-white);
+  color: var(--color-dark);
+}
 
 .container__detailpage {
   padding-block: 3% 7%;
 }
+
 .detailpage {
   display: flex;
   width: 95%;
@@ -734,6 +740,84 @@ footer {
 /*=======================================
        4.  Meida Queries / Responsive
 =========================================*/
+
+@media print {
+  .container__nav,
+  a,
+  header,
+  button,
+  footer,
+  .footer__apply {
+    display: none;
+  }
+
+  body,
+  main {
+    max-width: 100%;
+    color: var(--color-dark);
+  }
+
+  body {
+    display: flex;
+    /*  height: 100vh; */
+    flex-direction: column;
+  }
+
+  .nav__print {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    background-color: var(--color-dark) !important;
+  }
+  .nav__print > ul {
+    align-self: end;
+    padding-inline-start: 1rem;
+  }
+  .print__info {
+    grid-column: 2/3;
+  }
+
+  .nav__print > .print__info > li {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .nav__print > .print__info > li:first-of-type {
+    font-size: var(--font-size: 16px);
+    font-weight: bold;
+  }
+
+  p,
+  .footer__contact {
+    font-size: 12px;
+    line-height: 1.2;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+  h2,
+  .yellow-title {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  footer {
+    max-width: 100%;
+    margin: 0rem;
+  }
+
+  .nav__print > .contact__list {
+    font-size: 11px;
+    grid-column: 3/4;
+    
+  }
+
+  .contact__list > li:last-child {
+    padding-block-start: 0rem;
+  }
+}
 
 @media (prefers-reduced-motion) {
   .header__names {
@@ -1468,31 +1552,30 @@ footer {
     align-self: center;
     text-align: center;
   }
-  .header__title{
-    font-size:var(--font-size-h2);
+  .header__title {
+    font-size: var(--font-size-h2);
     margin-block-start: 2rem;
   }
 
-  .header__year{
+  .header__year {
     font-size: var(--font-size-m);
   }
 
-  .header__ticket{
+  .header__ticket {
     padding-block-start: 1rem;
   }
 
-  .header__ticket > h2{
-    font-size: var(--font-size-m)
+  .header__ticket > h2 {
+    font-size: var(--font-size-m);
   }
 
   .c__colon {
-    margin: .3rem 0.8rem;
+    margin: 0.3rem 0.8rem;
   }
 
-  .c__time{
+  .c__time {
     font-size: 0.8rem;
   }
-
 
   .c__days,
   .c__hrs,
@@ -1502,9 +1585,6 @@ footer {
     font-weight: var(--font-weight-bold);
     font-size: 1.3rem !important;
   }
-
-
-
 }
 
 /* Iphone 14pro */

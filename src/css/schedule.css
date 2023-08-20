@@ -167,6 +167,60 @@
        4.  Meida Queries / Responsive
 =========================================*/
 
+@media print {
+  .container__schedule > h1,
+  .schedule__intro {
+    text-align: left;
+    color: var(--color-dark);
+  }
+
+  /* p - text intro*/
+  .schedule__intro {
+    width: 60%;
+    margin: 0rem;
+  }
+  .schedule__disclaimer {
+    text-align: left;
+    left: 0%;
+    font-size: 12px;
+    width: 60%;
+    color: var(--color-dark);
+    line-height: 1.2;
+  }
+
+  .wrapper__stages {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Display all stages and days -xx*/
+  #saturday-z,
+  #sunday-z,
+  #saturday-main,
+  #sunday-main {
+    display: block;
+  }
+
+  #saturday-main:before {
+    content: 'Saturday';
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem;
+  }
+
+  #sunday-main:before {
+    content: 'Sunday';
+    font-size: 14px;
+    font-weight: var(--font-weight-bold);
+    padding: 0.5rem;
+  }
+  .stage > h2 {
+    font-size: 14px;
+    color: var(--color-dark);
+  }
+}
+
 @media only screen and (min-width: 1003px) {
   .wrapper__stages {
     display: flex;
@@ -303,7 +357,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-
   .schedule__artist > h4 {
     font-size: 18px;
   }
