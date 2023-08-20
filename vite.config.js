@@ -20,7 +20,6 @@ export default ({ command }) => ({
         countdown: './src/js/countdown.js',
         toggleButtons: './src/js/toggleButtons.js',
         nav: './src/js/nav.js',
-        sortTime: './src/js/sortTime.js',
       },
     },
   },

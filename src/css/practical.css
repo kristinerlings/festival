@@ -5,18 +5,18 @@
   line-height: 1.5;
 }
 .list__address > p > strong {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
 }
 
 .list__address > p > strong > span {
-  font-weight: var(--font-weight-semibold);
+  font-weight: var(--font-weight-medium);
   color: var(--color-pink);
 }
 
 .practical__content ul,
 .practical__faq ul {
   list-style-type: disc; /* Or "circle" or "square" */
-  margin-block-end: 1rem;
+  margin: 0rem 0rem 1rem 1rem;
 }
 .practical__content strong,
 .practical__faq strong,
@@ -141,14 +141,6 @@
 
   }
 } */
-
-@media only screen and (min-width: 1000px) {
-  .container__practical {
-    width: 90%;
-    line-height: 1.2;
-  }
-}
-
 @media only screen and (min-width: 830px) and (max-width: 1158px) {
   .btn__google {
     font-size: var(--font-size-xs);
@@ -250,40 +242,21 @@
   }
 }
 
-@media only screen and (max-width: 927px/* 391px */) {
-  main {
-    max-width: 90%;
-    margin: 0 auto;
-    line-height: 1.4;
+@media only screen and (min-width: 1000px) {
+  .container__practical {
+    width: 90%;
+    line-height: 1.2;
   }
-  /* }
+}
 
-@media only screen and (max-width: 600px) { */
-  /* nav + main */
-  /* main {
-    max-width: 90%;
-    margin: 0 auto;
-    line-height: 1.4;
-  } */
-  .nav__home {
-    display: none;
-  }
-  nav {
-    padding: 1.2rem 0.3rem;
-  }
-
-  nav .btn__tickets {
-    padding: 1rem;
-  }
-  .nav__logo {
-    max-width: 50%;
-    height: auto;
-  }
-
-  /**/
+@media only screen and (max-width: 927px) {
   .practical__intro {
-    padding-block: 2rem;
+    padding-block-start: 6rem;
   }
+  .intro__howto {
+    padding-block-start: 2rem;
+  }
+
   .practical__intro > h1 {
     font-size: var(--font-size-m);
     margin: 0.5rem 0rem;
@@ -348,10 +321,136 @@
   .btn__shedule--practical,
   .btn__buy,
   .btn__google {
-    padding-block: 0.9rem;
+    padding-block: 0.7rem;
+  }
+
+  .practical__faq > .wrapper__non--bleed {
+    max-width: 100%;
+    margin: 0rem auto;
+    padding-inline: 5%;
   }
 
   .practical__info {
     padding-block: 1rem 2rem;
   }
+}
+
+@media only screen and (max-width: 680px) {
+  .practical__faq > .wrapper__non--bleed {
+    margin: 0rem;
+  }
+
+  /* .practical__info > p {
+    max-width: 100%;
+  } */
+}
+
+@media only screen and (max-width: 500px) {
+  /*   .container__practical {
+    width: 100%;
+  } */
+  /*   .container__practical {
+  }
+  .intro__howto{
+    width: 100%;
+  } */
+  /* .practical__intro.wrapper__non--bleed {
+    width: 100%;
+    margin: 0rem; */
+  /*     display: flex; */
+  /* flex-direction: column; */
+  /*   }
+
+  .bleed.practical__bleed{
+    
+  } */
+  /*   .practical__intro.wrapper__non--bleed{
+    width: 100%;
+    margin: 0rem auto;
+  } */
+  p {
+    font-size: 17px;
+  }
+
+  .intro__paragraph {
+    font-weight: var(--font-weight-medium);
+    padding-block-start: 0.4rem;
+    width: 100%;
+  }
+
+  /* -------- Delete from here if I change my mind -> practical mobile --------- */
+  .intro__howto > h2 {
+  }
+  /*   .intro__howto {
+    padding-block-start: 2rem;
+  } */
+
+  .howto__list {
+    /*  display: flex; */
+
+    /*   text-align: center; */
+  }
+  .howto__list > li {
+    width: 100%;
+    /*  background-color: transparent; */
+    /*    color: var(--color-white); */
+    /*     padding: 0.1rem 0rem; */
+    /*     margin: 0.5rem 0rem; */
+    /*margin: 1rem 0rem;  */
+    /*     border-bottom: 1px solid var(--color-white);
+    border-radius: 0rem; */
+  }
+
+  .howto__list > li:has(a) {
+    padding-bottom: 1.5rem;
+  }
+
+  .list__address > p {
+    /* padding: 0.2rem 0rem; */
+  }
+  /* 
+  .list__address > a ~ p {
+    margin: 10rem;
+  }
+ */
+  .howto__list > li > h3 {
+    padding: 0rem;
+  }
+
+  .practical__bleed {
+    background-image: url(../img/practical-bg-mobile.png);
+  }
+
+  .howto__btns {
+    align-items: start;
+    margin-block-end: 1rem;
+  }
+  /*   .howto__btns > a:first-of-type {
+    color: var(--color-white);
+    border-color: var(--color-white);
+  } */
+
+  .howto__btns > a:last-of-type {
+    color: var(--color-dark);
+    border-color: var(--color-yellow);
+    background-color: var(--color-yellow);
+  }
+  /*   main {
+    margin-inline: 0rem auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .practical__intro.wrapper__non--bleed {
+    width: 100%;
+    margin: 0rem auto;
+  } */
+
+  .practical__bleed > .practical__intro {
+    max-width: 100%;
+    margin: 0rem;
+    padding-inline: 5%;
+  }
+
+  /* --------- delete ends here ------------ */
 }

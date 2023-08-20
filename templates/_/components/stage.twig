@@ -1,17 +1,6 @@
-{# 
-{% block head %}
- {{ craft.vite.script("src/js/sortTime.js" ) }}
-{% endblock %}
-  #}
- 
- {% set artists = craft.entries.section('artists').orderBy('performanceTime').all() %}
-{% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day)|sort((a, b) => (a.performanceTime|date('U') > b.performanceTime|date('U')) ? 1 : -1) %}
 
-{# {% set startTime = '2023-09-16 12:00:00' %}
-{% set endTime = '2023-09-17 04:00:00' %}
- #}
-{# {% set filteredArtists = artistsByStageAndDay|filter(artist => artist.performanceTime >= startTime and artist.performanceTime <= endTime) %}
- #}
+{% set artists = craft.entries.section('artists').orderBy('performanceTime').all() %}
+{% set artistsByStageAndDay = artists|filter(artist => artist.stageCategory.one().slug == stage and artist.dayCategory.one().slug == day)|sort((a, b) => (a.performanceTime|date('U') > b.performanceTime|date('U')) ? 1 : -1) %}
 
 {% for artist in artistsByStageAndDay %}
   <a class="schedule__artistlink" href="{{ artist.url }}">
