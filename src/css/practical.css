@@ -250,37 +250,8 @@
   }
 }
 
-@media only screen and (max-width: 927px/* 391px */) {
-  main {
-    max-width: 90%;
-    margin: 0 auto;
-    line-height: 1.4;
-  }
-  /* }
+@media only screen and (max-width: 927px) {
 
-@media only screen and (max-width: 600px) { */
-  /* nav + main */
-  /* main {
-    max-width: 90%;
-    margin: 0 auto;
-    line-height: 1.4;
-  } */
-  .nav__home {
-    display: none;
-  }
-  nav {
-    padding: 1.2rem 0.3rem;
-  }
-
-  nav .btn__tickets {
-    padding: 1rem;
-  }
-  .nav__logo {
-    max-width: 50%;
-    height: auto;
-  }
-
-  /**/
   .practical__intro {
     padding-block: 2rem;
   }

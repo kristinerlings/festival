@@ -11,7 +11,7 @@
 	<header class="bleed" {# style="background-image: url('{{ heroImage.url() }}' #}>
 		<div class="header wrapper__non--bleed">
 			<h1 class="header__title"><span class="header__year">{{entry.year}}</span> Myrkva Festival</h1>
-			<h3 class="header__location">{{entry.location}}</h3>
+			<h3 class="header__location">{# <i class="material-icons">place</i> #}{{entry.location}}</h3>
 			<div class="header__names">
 				{% set totalBlocks = entry.introNameBlock|length %}
 				{% for block in entry.introNameBlock %}
