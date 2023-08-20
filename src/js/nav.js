@@ -12,9 +12,8 @@ const changeImageSrc = () => {
 };
 
 const init = () => {
-  changeImageSrc();
-
-  window.addEventListener('resize', changeImageSrc);
+  //changeImageSrc();
+  window.addEventListener('resize', changeImageSrc());
 };
 
 init();
