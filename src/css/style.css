@@ -5,39 +5,17 @@
 
 /*
 1.Global style
-2.Typography
-3.Layout
-4.Keyframes/animations
+2.Layout
+3.Keyframes/animations
 5.Media queries
 */
 
-/*=======================================
-       1. Typography
-=========================================*/
-
-/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
- */
-@font-face {
-  font-family: 'Fontspring-DEMO-integralcf-demibold';
-  src: url('../fonts/Fontspring-DEMO-integralcf-demibold.otf')
-    format('opentype');
-  font-display: swap;
-  font-style: normal;
-}
-
-/* @font-face {
-  font-family: 'ClashDisplay-Extralight';
-  src: url('../fonts/ClashDisplay-Extralight.otf') format('opentype');
-  font-display: swap;
-  font-style: normal;
-} */
 
 /*=======================================
       1. Global Style
 =========================================*/
 html {
   scroll-behavior: smooth;
-  /*  overflow-x: hidden; */
 }
 
 *,
@@ -49,8 +27,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif, Arial, Helvetica, sans-serif;
   font-size: var(--font-size-s);
-  /* overflow-x: hidden; */
-  background-color: var(--color-dark); /*  rgb(154, 185, 156); */
+  background-color: var(--color-dark); 
   color: var(--color-white);
 }
 
@@ -85,18 +62,23 @@ a {
 .white {
   color: var(--color-white);
 }
+
 .pink {
   color: var(--color-pink);
 }
+
 .yellow {
   color: var(--color-yellow);
 }
+
 .bold {
   font-weight: bold;
 }
+
 .semibold {
   font-weight: 500;
 }
+
 .btn {
   background-color: var(--color-yellow);
   color: var(--color-dark);
@@ -120,7 +102,6 @@ a {
   transition: all 0.3s ease;
 }
 
-/* .nav__social >  */
 li > .nav__link.social {
   padding: 0rem 1.2rem 0rem 0rem;
 }
@@ -138,7 +119,6 @@ li > .nav__link.social {
   background-color: var(--color-dark);
   margin: 0 auto;
   width: 90%;
-  /*  margin: 0 auto; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
@@ -147,33 +127,12 @@ li > .nav__link.social {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  /* justify-content: center; */
 }
 
 li.set__active a {
   color: var(--color-pink);
   font-weight: var(--font-weight-semibold);
 }
-
-/* #navbar > .nav__social{
-  justify-self: flex-start;
-} */
-
-/* .nav > li{
-  padding-inline: 0.5rem;
-} */
-
-/* .nav:first-child {
-  grid-column: 1/2;
-}
-.nav:nth-child(2) {
-  grid-column: 2/3;
-  justify-self: center;
-}
-.nav:last-child {
-  grid-column: 3/4;
-}
- */
 
 .nav__social {
   grid-column: 1/2;
@@ -208,10 +167,10 @@ li.set__active a {
   z-index: 1000;
 }
 
-/**/
 .link__practical {
   margin-inline-end: 0.4rem;
 }
+
 .btn__tickets {
   background-color: var(--color-yellow);
   color: var(--color-dark);
@@ -228,10 +187,6 @@ li.set__active a {
 
 /* --------- header -----------*/
 header {
-  /*   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
   background-image: url('../img/header-img.png');
   background-size: cover;
   background-position: center;
@@ -249,7 +204,6 @@ header {
 .header__title {
   font-size: var(--font-size-h1);
   font-weight: var(--font-weight-bold);
-  /*   font-family: var(--ff-dosis); */
   text-transform: uppercase;
   padding-block-end: 10%;
 }
@@ -268,6 +222,7 @@ header {
   font-size: var(--font-size-s);
   display: flex;
 }
+
 .header__names > p {
   padding: 0rem 1.2rem;
 }
@@ -276,7 +231,6 @@ header {
   grid-row: 1/2;
   grid-column: 2/3;
   justify-self: end;
-  /*   padding: 7% 10%; */
   padding-block-start: 15%;
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-s);
@@ -287,6 +241,7 @@ header {
   grid-column: 1/2;
   justify-self: start;
 }
+
 .header__ticket > h3 {
   font-size: var(--font-size-s);
   font-weight: var(--font-weight-medium);
@@ -298,6 +253,7 @@ header {
   font-weight: var(--font-weight-semibold);
   padding-block-end: 1.5rem;
 }
+
 .header__ticket > a {
   text-transform: uppercase;
   font-size: var(--font-size-s);
@@ -319,7 +275,6 @@ header {
 
 .countdown {
   display: flex;
-  /* padding-inline: 10%; */
 }
 .countdown__title {
   font-size: var(--font-size-m);
@@ -354,7 +309,6 @@ header {
   font-weight: var(--font-weight-bold);
 }
 
-/*countdown ends*/
 
 /* --------- INTRO -----------*/
 .container__intro {
@@ -430,7 +384,6 @@ header {
   font-weight: var(--font-weight-bold);
   color: var(--color-yellow);
   text-transform: uppercase;
-  /*   padding-block: 1rem; */
 }
 
 .lineup__intro > h3 {
@@ -456,7 +409,7 @@ header {
 }
 
 .lineup__artist > h3 {
-  font-size: 1.625rem; /*26px*/
+  font-size: 1.625rem; 
   font-weight: var(--font-weight-bold);
   padding-block: 0.5rem;
 }
@@ -481,6 +434,7 @@ header {
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
 }
+
 .lineup__intro {
   display: flex;
   justify-content: space-between;
@@ -525,6 +479,7 @@ header {
   width: 95%;
   margin: 1.2rem auto 0rem;
 }
+
 .detailpage__info {
   height: 100%;
   padding-inline: 1.5rem;
@@ -537,8 +492,6 @@ header {
   font-family: var(--ff-dosis);
   font-weight: var(--font-weight-bold);
   font-size: clamp(23px, calc(1.4375rem + ((1vw - 3.93px) * 0.2681)), 26px);
-
-  /*   padding-block-end: .5rem; */
 }
 
 .info__stage {
@@ -550,6 +503,7 @@ header {
   font-weight: var(--font-weight-bold);
   padding-block-end: 0.5rem;
 }
+
 .info__songs {
   font-weight: var(--font-weight-bold);
   font-family: var(--ff-dosis);
@@ -565,7 +519,6 @@ header {
   height: 100%;
   object-fit: cover;
   border-radius: 4px;
-  /*   margin-inline-end: 1rem; */
 }
 
 /* --------- Our Partners -----------*/
@@ -576,6 +529,7 @@ header {
   background-repeat: no-repeat;
   left: 0%;
 }
+
 .container__partners {
   display: flex;
   flex-direction: column;
@@ -584,15 +538,10 @@ header {
   height: 60vh;
   padding-block: 3rem;
 }
+
 .container__partners > h2 {
-  /* font-size: var(--font-size-h2);
-  font-weight: var(--font-weight-bold);
-  color: var(--color-yellow);
-  text-transform: uppercase; */
   font-size: var(--font-size-h2);
   padding-block-end: 2rem;
-  /*   font-weight: var(--font-weight-medium);
-  font-family: var(--ff-dosis); */
 }
 
 .partners__logo {
@@ -615,16 +564,12 @@ footer {
   height: 100%;
   padding-block: 5rem 2rem;
   background-color: var(--color-dark);
-  /*  display: flex; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
-  /* justify-content: space-around; */
   width: 90%;
   margin: 0 auto;
 }
 
-/*left: address*/
 .contact__list {
   line-height: 1.3;
   font-size: 16px;
@@ -635,28 +580,24 @@ footer {
   padding-block-start: 0.4rem;
 }
 
-/* Center: nav+social */
 .footer__nav {
   grid-column: 2/3;
   justify-self: center;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: space-between;
-  /* padding: 1rem; */
   text-align: center;
 }
 .footer__nav > p {
   display: none;
 }
+
 .footer__links {
   display: flex;
   flex-direction: row;
-  /*   margin-block: 1rem; */
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-s);
-  /* border-bottom: 1px solid var(--color-white); */
   padding-block-end: 0.5rem;
 }
 .footer__links > li {
@@ -679,7 +620,6 @@ footer {
 }
 
 .footer__social {
-  /* border-top: 1px solid var(--color-white); */
   padding-block: 0.5rem;
   display: none;
 }
@@ -688,7 +628,6 @@ footer {
 .footer__apply {
   grid-column: 3/4;
   justify-self: flex-end;
-  /*  align-self: center; */
   margin-block-start: 0.5rem;
   text-align: end;
   font-weight: var(--font-weight-medium);
@@ -712,7 +651,7 @@ footer {
   color: var(--color-dark);
 }
 
-/* Ticket page */
+/* ------- Ticket page -------- */
 .container__tickets {
   display: flex;
   flex-direction: column;
@@ -736,6 +675,7 @@ footer {
   padding-block-end: 1rem;
   color: var(--color-pink);
 }
+
 
 /*=======================================
        4.  Meida Queries / Responsive
@@ -762,7 +702,6 @@ footer {
 
   body {
     display: flex;
-    /*  height: 100vh; */
     flex-direction: column;
   }
 
@@ -820,7 +759,7 @@ footer {
     padding-block-start: 0rem;
   }
 
-  /*header*/
+  /* -- header -- */
   .header,
   header {
     padding: 1.5rem 0rem 0rem 0.75rem;
@@ -835,8 +774,6 @@ footer {
   .header__title {
     font-size: 20px;
     padding: 0rem;
-    /*  grid-row: 1/2;
-    grid-column: 1/2; */
     justify-self: start;
     align-self: start;
   }
@@ -846,7 +783,6 @@ footer {
     padding-block: 0.4rem;
   }
 
-  /**/
   .container__intro {
     padding-block: 0.5rem;
   }
@@ -873,7 +809,7 @@ footer {
     display: none;
   }
 
-  /*The lineup*/
+  /* -- The lineup -- */
   .container__lineup > .yellow-title {
     font-size: 16px;
     padding: 0rem 1.5rem;
@@ -883,9 +819,6 @@ footer {
     display: none;
   }
 
-  /*  .container__lineup {
-    padding-block: 0rem;
-  } */
   .lineup__intro > h3 {
     padding-block: 0.2rem;
   }
@@ -921,6 +854,7 @@ footer {
     color: var(--color-dark);
   }
 }
+
 @media print and (orientation: landscape) {
   .intro__img {
     max-width: 28%;
@@ -953,7 +887,7 @@ footer {
   }
 }
 
-@media only screen and (min-width: 1512px) {
+@media only screen and (min-width: 1700px) {
   body {
     max-width: 80%;
     margin: 0 auto;
@@ -963,6 +897,10 @@ footer {
   }
   #navbar {
     position: relative;
+  }
+  
+  .footer {
+    width: 100%;
   }
 }
 
@@ -1030,7 +968,6 @@ footer {
     font-size: 1.4rem;
   }
 
-  /*countdown*/
   .c__colon {
     margin: 0rem 0.6rem;
     font-size: 1.5rem;
@@ -1048,7 +985,7 @@ footer {
     font-size: 1rem;
   }
 
-  /*line up*/
+  /* -- line up -- */
   .container__lineup {
     display: flex;
     flex-direction: column;
@@ -1105,7 +1042,7 @@ footer {
     font-size: 1.2rem;
   }
 
-  /*Detailpage Artists*/
+  /* -- Detailpage Artists -- */
 
   .detailpage {
     display: flex;
@@ -1114,9 +1051,6 @@ footer {
     align-items: center;
     width: 100%;
     margin: 2rem auto 0rem;
-  }
-
-  .info__time {
   }
 
   .info__stage {
@@ -1204,13 +1138,8 @@ footer {
     width: 100%;
   }
 
-  /*footer*/
+  /* -- footer -- */
   .footer {
-    /*  display: flex;
-    flex-wrap: wrap;
-    gap: 0.8rem;
-    justify-content: space-between;
-    padding-block: 5rem; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -1229,7 +1158,6 @@ footer {
   }
 
   .footer__social {
-    /* border-top: 1px solid var(--color-white); */
     display: flex;
     justify-content: flex-start;
   }
@@ -1247,10 +1175,6 @@ footer {
     justify-self: start;
   }
 }
-
-/* @media only screen and (max-width: 770px) {
-  
-} */
 
 @media only screen and (max-width: 755px) {
   .header__title {
@@ -1275,8 +1199,6 @@ footer {
 }
 
 @media only screen and (max-width: 739px) {
-  /**/
-
   .lineup__artists {
     display: block;
   }
@@ -1298,13 +1220,10 @@ footer {
     grid-column: 1/2;
     font-size: var(--font-size-m);
     justify-self: start;
-    /*  align-self: center;
-    justify */
-    /*   grid-row: 2/3; */
   }
+
   .lineup__artist > p {
     grid-column: 2/3;
-    /*    grid-row: 2/3; */
     align-self: center;
     justify-self: end;
   }
@@ -1366,10 +1285,7 @@ footer {
     order: 1;
     font-size: var(--font-size-s);
     display: block;
-    /*    overflow: hidden; */
     width: 100%;
-    /*  justify-content: center; */
-    /*  margin: 0 auto; */
     white-space: nowrap;
     animation: loopAnimation 30s linear infinite;
   }
@@ -1388,14 +1304,11 @@ footer {
   .header__names > p {
     margin: 1rem 0.4rem 0rem;
     display: inline-block;
-    /*     padding: 0rem;
-    width: 100%; */
   }
 
   .header__ticket {
     order: 3;
     text-align: center;
-    /* background-color: rgba(37, 37, 37, 0.7); */
   }
 
   .header__ticket > h2 {
@@ -1422,12 +1335,9 @@ footer {
   .intro__text > a:first-of-type {
     margin-block-start: 1rem;
   }
-  /* 
-  .header__ticket > h2 {
-    font-size: 1.4rem;
-  } */
+  
 
-  /*countdown*/
+  /* -- countdown -- */
   .c__colon {
     margin: 0rem 1.2rem;
     font-size: 30px;
@@ -1437,21 +1347,6 @@ footer {
     font-size: 30px;
   }
 
-  /*line up*/
-  /*   .container__lineup {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .lineup__intro {
-    flex-direction: column;
-    align-items: center;
-    margin-block-end: 1rem;
-  }
-  .partners__logo {
-    width: 90%;
-  } */
 }
 
 @media only screen and (max-width: 653px) {
@@ -1513,6 +1408,7 @@ footer {
   .intro__text {
     padding: 0rem;
   }
+
   .intro__text > h2 {
     line-height: 1.3;
     padding-inline-end: 4rem;
@@ -1536,7 +1432,7 @@ footer {
     font-size: 1.2rem;
   }
 
-  /*Home: Container Artist Lineup */
+  /* -- Artist Lineup -- */
   .lineup__intro {
     padding-inline: 0rem;
   }
@@ -1565,7 +1461,7 @@ footer {
     font-weight: var(--font-weight-medium);
     font-family: var(--ff-dosis);
   }
-  /*   text-decoration: underline; */
+
   .partners__logo.wrapper__non--bleed {
     padding-block-end: 3rem;
   }
@@ -1611,14 +1507,6 @@ footer {
   .fa {
     font-size: 1.8rem;
   }
-
-  /*   .footer__nav{
-    align-items: flex-start;
-    justify-content: center;
-  } */
-
-  .footer__links.fl {
-  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -1650,13 +1538,6 @@ footer {
 }
 
 @media only screen and (max-width: 430px) {
-  /*  nav .btn__tickets {
-    padding: .8rem 1rem;
-    border-radius: 8px;
-  } */
-  /*     .nav__logo {
-    max-width: 100%;
-  }   */
   .img__logo {
     max-width: 60%;
     min-width: 50%;
@@ -1696,25 +1577,10 @@ footer {
     margin-block-start: 2rem;
   }
 }
+
 @media only screen and (max-width: 400px) and (max-height: 845px) {
-  /*  .header.wrapper__non--bleed{
-    justify-content: space-between;
-  } */
- /*  .header__year,
-  .header__title {
-    align-self: center;
-    text-align: center;
-  }
-  .header__title {
-    font-size: var(--font-size-h2);
-  }
- */
-/*   .header__year {
-    font-size: var(--font-size-m);
-  } */
   .header__ticket {
     margin-block: 1rem -5rem;
-    
   }
   .partners__img {
     max-width: 25%;
@@ -1736,19 +1602,16 @@ footer {
   .header__year {
     font-size: var(--font-size-m);
   }
- .header__ticket {
+  .header__ticket {
     margin-block: 5rem -2rem;
   }
-  /* .header__ticket {
-    padding-block-start: 1rem;
-  } */
 
   .header__ticket > h2 {
     font-size: var(--font-size-m);
   }
 
-  .container__countdown{
-   margin-block-start: 7rem;
+  .container__countdown {
+    margin-block-start: 7rem;
   }
 
   .c__colon {
@@ -1769,11 +1632,3 @@ footer {
   }
 }
 
-
-
-/* Iphone 14pro */
-/* @media only screen and (max-width: 400px and max-height: 844px){
-    .footer__apply {
-    padding-block-end: 10rem;
-  }
-} */

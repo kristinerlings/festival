@@ -1,4 +1,9 @@
+{% block head %}
+ {{ craft.vite.script("src/js/toggleLang.js") }}
+{% endblock %}
 {% set currentUrl = craft.app.request.url %}
+
+
 <footer class="footer">
   <div class="footer__contact">
 		<a href="{{siteUrl}}" class="footer__logo"><img src="{{ siteUrl }}public/logo.svg" alt="myrkva logo" ></a>

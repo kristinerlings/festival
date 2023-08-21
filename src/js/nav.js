@@ -12,7 +12,7 @@ const changeImageSrc = () => {
 };
 
 const init = () => {
-  //changeImageSrc();
+  changeImageSrc();
   window.addEventListener('resize', changeImageSrc());
 };
 

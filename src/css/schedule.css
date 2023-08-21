@@ -31,16 +31,6 @@
   color: var(--color-white-darker);
 }
 
-/* .wrapper__stages {
-  display: flex;
-  justify-content: center;
-}
-
-.stages__line {
-  padding: 0.5rem;
-  background-color: var(--color-yellow);
-} */
-
 /*===== BTNS =====*/
 .btn__schedule {
   color: #bcb2bb;
@@ -74,7 +64,6 @@
 }
 
 /*======= Stage  ======== */
-
 .stage {
   font-size: var(--font-size-l);
   font-weight: var(--font-weight-bold);
@@ -125,8 +114,6 @@
 .schedule__artist:hover {
   border-radius: 4px;
   background-color: var(--color-white-darker);
-  /*   transition: all 0.3s ease;
-  -webkit-transition: all 01s ease; */
 }
 
 .schedule__artist:hover > .schedule__img {
@@ -289,7 +276,6 @@
 }
 
 @media only screen and (max-width: 1002px) {
-  /* //adjust width of container? */
   .container__schedule {
     max-width: 98%;
   }
@@ -305,7 +291,6 @@
 
   .schedule__intro {
     width: 100%;
-    /*  text-align: left; */
     line-height: 1.4;
   }
 
@@ -360,7 +345,6 @@
     font-weight: var(--font-weight-semi-bold);
     grid-column: 2/3;
     align-self: end;
-    /*   margin-block-start: .5rem; */
   }
 
   .schedule__artist > .hidden {
@@ -395,6 +379,7 @@
     padding-block: 0.5rem;
   }
 }
+
 @media only screen and (min-width: 601px) and (max-width: 1003px) {
   .container__schedule {
     max-width: 70%;
