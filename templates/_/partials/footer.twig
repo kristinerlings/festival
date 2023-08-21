@@ -1,4 +1,9 @@
+{% block head %}
+ {{ craft.vite.script("src/js/toggleLang.js") }}
+{% endblock %}
 {% set currentUrl = craft.app.request.url %}
+
+
 <footer class="footer">
   <div class="footer__contact">
 		<a href="{{siteUrl}}" class="footer__logo"><img src="{{ siteUrl }}public/logo.svg" alt="myrkva logo" ></a>
@@ -12,9 +17,9 @@
 	</div>
   <div class="footer__nav">
     <ul class="footer__links fl">
-      <li class="{{ currentUrl == '/' ? 'set__active' : '' }}"><a href="{{siteUrl}}" class="footer__link link__home">Home</a></li>
-      <li class="{{ currentUrl == '/schedule' ? 'set__active' : '' }}"><a href="{{url('schedule')}}" class="footer__link link__schedule">Schedule</a></li>
-      <li class="{{ currentUrl == '/practical' ? 'set__active' : '' }}"><a href="{{url('practical')}}" class="footer__link link__practical">Practical</a></li>
+      <li class="{{ currentUrl == '/festival/' ? 'set__active' : '' }}"><a href="{{siteUrl}}" class="footer__link link__home">Home</a></li>
+      <li class="{{ currentUrl == '/festival/schedule' ? 'set__active' : '' }}"><a href="{{url('schedule')}}" class="footer__link link__schedule">Schedule</a></li>
+      <li class="{{ currentUrl == '/festival/practical' ? 'set__active' : '' }}"><a href="{{url('practical')}}" class="footer__link link__practical">Practical</a></li>
     </ul>
     <p>Myrkva on social</p>
     <ul class="nav footer__social">

@@ -5,6 +5,7 @@ const $stageSundayZ = document.querySelector('#sunday-z');
 const $stageSaturdayMain = document.querySelector('#saturday-main');
 const $stageSundayMain = document.querySelector('#sunday-main');
 
+
 // saturday by default :
 $stageSundayZ.style.display = 'none';
 $stageSundayMain.style.display = 'none';
@@ -24,6 +25,7 @@ const updateSchedule = () => {
 };
 
 const init = () => {
+  //toggle schedule buttons
   $btnSaturday.addEventListener('click', () => {
     if (!$btnSaturday.classList.contains('active__day')) {
       $btnSaturday.classList.add('active__day');
@@ -40,6 +42,7 @@ const init = () => {
     }
   });
 
+  //Media query Print
   const $mediaQueryPrint = window.matchMedia('print');
   $mediaQueryPrint.addEventListener('change', (e) => {
     if (e.matches) {
