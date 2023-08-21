@@ -39,6 +39,18 @@ const init = () => {
       updateSchedule();
     }
   });
+
+  const $mediaQueryPrint = window.matchMedia('print');
+  $mediaQueryPrint.addEventListener('change', (e) => {
+    if (e.matches) {
+      $stageSaturdayZ.style.display = 'block';
+      $stageSaturdayMain.style.display = 'block';
+      $stageSundayZ.style.display = 'block';
+      $stageSundayMain.style.display = 'block';
+    } else {
+      updateSchedule();
+    }
+  });
 };
 
 init();

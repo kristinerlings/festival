@@ -201,6 +201,7 @@
   #sunday-main {
     display: block;
   }
+  
 
   #saturday-main:before {
     content: 'Saturday';
