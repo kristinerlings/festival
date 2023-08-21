@@ -137,7 +137,7 @@ li > .nav__link.social {
 .container__nav {
   background-color: var(--color-dark);
   margin: 0 auto;
-  width: 92%;
+  width: 90%;
   /*  margin: 0 auto; */
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -360,7 +360,7 @@ header {
 .container__intro {
   display: flex;
   height: 100%;
-  padding-block: 6rem 0;
+  padding-block: 2rem 0rem;
 }
 
 .intro__text {
@@ -613,7 +613,7 @@ header {
 /* --------- FOOTER -----------*/
 footer {
   height: 100%;
-  padding-block: 5rem 1rem;
+  padding-block: 5rem 2rem;
   background-color: var(--color-dark);
   /*  display: flex; */
   display: grid;
@@ -847,7 +847,10 @@ footer {
   }
 
   /**/
-  .container__intro,
+  .container__intro {
+    padding-block: 0.5rem;
+  }
+
   .container__lineup {
     padding-block: 1.5rem;
   }
@@ -950,7 +953,17 @@ footer {
   }
 }
 
-@media only screen and (max-width: 1512px) {
+@media only screen and (min-width: 1512px) {
+  body {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+  .container__nav {
+    width: 100%;
+  }
+  #navbar {
+    position: relative;
+  }
 }
 
 @media only screen and (max-width: 1493px) {
@@ -1076,6 +1089,9 @@ footer {
     max-width: 50%;
     height: auto;
   }
+  .container__lineup {
+    padding-block: 2rem 0;
+  }
 }
 
 @media only screen and (max-width: 878px) {
@@ -1160,6 +1176,15 @@ footer {
   }
   .info__about {
     padding: 0.4rem;
+  }
+  .lineup__intro {
+    padding: 0rem;
+  }
+  .lineup__intro > h3 {
+    padding-block-end: 0rem;
+  }
+  .lineup__intro > a {
+    margin-block: 1rem;
   }
 }
 
@@ -1661,6 +1686,7 @@ footer {
     margin: 0rem;
   }
 }
+
 @media only screen and (max-width: 402px) {
   .intro__text > h2 {
     padding-inline-end: 0rem;
@@ -1668,6 +1694,31 @@ footer {
 
   .footer {
     margin-block-start: 2rem;
+  }
+}
+@media only screen and (max-width: 400px) and (max-height: 845px) {
+  /*  .header.wrapper__non--bleed{
+    justify-content: space-between;
+  } */
+ /*  .header__year,
+  .header__title {
+    align-self: center;
+    text-align: center;
+  }
+  .header__title {
+    font-size: var(--font-size-h2);
+  }
+ */
+/*   .header__year {
+    font-size: var(--font-size-m);
+  } */
+  .header__ticket {
+    margin-block: 1rem -5rem;
+    
+  }
+  .partners__img {
+    max-width: 25%;
+    height: auto;
   }
 }
 
@@ -1679,19 +1730,25 @@ footer {
   }
   .header__title {
     font-size: var(--font-size-h2);
-    margin-block-start: 2rem;
+    margin-block-start: 5rem;
   }
 
   .header__year {
     font-size: var(--font-size-m);
   }
-
-  .header__ticket {
-    padding-block-start: 1rem;
+ .header__ticket {
+    margin-block: 5rem -2rem;
   }
+  /* .header__ticket {
+    padding-block-start: 1rem;
+  } */
 
   .header__ticket > h2 {
     font-size: var(--font-size-m);
+  }
+
+  .container__countdown{
+   margin-block-start: 7rem;
   }
 
   .c__colon {
@@ -1711,6 +1768,8 @@ footer {
     font-size: 1.3rem !important;
   }
 }
+
+
 
 /* Iphone 14pro */
 /* @media only screen and (max-width: 400px and max-height: 844px){

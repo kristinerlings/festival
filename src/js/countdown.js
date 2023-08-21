@@ -2,8 +2,6 @@ const $countdownDays = document.querySelector('.c__days');
 const $countdownHours = document.querySelector('.c__hrs');
 const $countdownMinutes = document.querySelector('.c__min');
 const $countdownSeconds = document.querySelector('.c__sec');
-/* const $countdownTitle = document.querySelector('.c__title');
-const $countdownStatus = document.querySelector('.c__status'); */
 const finalDate = new Date('2023-09-16T12:00:00');
 
 const updateCountdown = () => {
@@ -26,22 +24,11 @@ const updateCountdown = () => {
     $countdownHours.textContent = `0`;
     $countdownMinutes.textContent = `0`;
     $countdownSeconds.textContent = `0`;
-    /* if (
-      currentTime >= finalDate &&
-      currentTime <= finalDate + twoDaysInSeconds
-    ) {
-      $countdownTitle.textContent = `The festival has started!`;
-      $countdownStatus.textContent = `See you there!`;
-    } else {
-      $countdownTitle.textContent = `The event has ended!`;
-      $countdownStatus.textContent = `See you next yeare!`;
-    } */
   }
 };
 
 const init = () => {
   updateCountdown();
-  // Update every second
   setInterval(updateCountdown, 1000);
 };
 
