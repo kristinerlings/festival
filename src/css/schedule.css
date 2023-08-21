@@ -174,7 +174,6 @@
     color: var(--color-dark);
   }
 
-  /* p - text intro*/
   .schedule__intro {
     width: 60%;
     margin: 0rem;
@@ -189,35 +188,91 @@
   }
 
   .wrapper__stages {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
-  /* Display all stages and days -xx*/
+  .stage > h2 {
+    border-bottom: 1px solid var(--color-grey);
+  }
+
   #saturday-z,
   #sunday-z,
   #saturday-main,
   #sunday-main {
     display: block;
+    border: 1px solid var(--color-grey);
+    padding-block-end: 1rem;
   }
 
-  #saturday-main:before {
+  #saturday-main {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  #saturday-z {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+  #sunday-main {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin-block-start: 3rem;
+  }
+  #sunday-z {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-block-start: 3rem;
+  }
+
+  #saturday-main:before,
+  #saturday-z:before {
     content: 'Saturday';
-    font-size: 14px;
-    font-weight: var(--font-weight-bold);
-    padding: 0.5rem;
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
+    padding: 1rem 0.5rem 0.5rem;
   }
 
-  #sunday-main:before {
+  #sunday-main:before,
+  #sunday-z:before {
     content: 'Sunday';
-    font-size: 14px;
-    font-weight: var(--font-weight-bold);
+    font-size: 12px;
+    font-weight: var(--font-weight-medium);
     padding: 0.5rem;
+  }
+  .stage__day {
+    display: block;
   }
   .stage > h2 {
+    font-size: 18px;
+    color: var(--color-dark);
+  }
+
+  .schedule__img,
+  .schedule__artist:hover > .schedule__img {
+    visibility: hidden;
+  }
+  .schedule__artist {
+    padding: 0rem 0rem 0rem 1rem;
+    width: 100%;
+    margin: 0.5rem 0rem;
+  }
+
+  .stage {
+    border: none;
+  }
+
+  .stage > h2 {
+    font-size: 16px;
+    padding: 1rem 0rem 0.5rem 1rem;
+  }
+
+  .schedule__artist > h4 {
     font-size: 14px;
     color: var(--color-dark);
+    font-weight: var(--font-weight-semibold);
+  }
+  .schedule__artist > p > time {
+    font-size: 12px;
   }
 }
 

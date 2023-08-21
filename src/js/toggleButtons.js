@@ -23,10 +23,6 @@ const updateSchedule = () => {
   }
 };
 
-
- 
- 
-
 const init = () => {
   $btnSaturday.addEventListener('click', () => {
     if (!$btnSaturday.classList.contains('active__day')) {
@@ -42,8 +38,19 @@ const init = () => {
       $btnSaturday.classList.remove('active__day');
       updateSchedule();
     }
-  
-  }); 
+  });
+
+  const $mediaQueryPrint = window.matchMedia('print');
+  $mediaQueryPrint.addEventListener('change', (e) => {
+    if (e.matches) {
+      $stageSaturdayZ.style.display = 'block';
+      $stageSaturdayMain.style.display = 'block';
+      $stageSundayZ.style.display = 'block';
+      $stageSundayMain.style.display = 'block';
+    } else {
+      updateSchedule();
+    }
+  });
 };
 
 init();
