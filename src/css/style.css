@@ -918,6 +918,31 @@ footer {
     color: var(--color-dark);
   }
 }
+@media print and (orientation: landscape) {
+  .intro__img {
+    max-width: 28%;
+  }
+  .intro__text {
+    max-width: 40%;
+  }
+  .lineup__artists {
+    padding: 1rem 0rem !important;
+    margin: 0rem !important;
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .lineup__artist {
+    max-width: 100%;
+    height: auto;
+    margin: 0rem 0rem 0rem 1.5rem !important;
+  }
+  .artist__img {
+    max-width: 100%;
+    max-height: 4rem;
+    object-fit: cover;
+  }
+}
 
 @media (prefers-reduced-motion) {
   .header__names {
