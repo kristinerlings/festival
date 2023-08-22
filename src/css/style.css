@@ -7,7 +7,7 @@
 1.Global style
 2.Layout
 3.Keyframes/animations
-5.Media queries
+4.Media Queries / Responsive
 */
 
 /*=======================================
@@ -31,7 +31,7 @@ body {
 }
 
 /*=======================================
-       3.  Layout
+       2.  Layout
 =========================================*/
 .bleed {
   width: 100vw;
@@ -675,7 +675,7 @@ footer {
 }
 
 /*=======================================
-       4.  Meida Queries / Responsive
+       4.  Media Queries / Responsive
 =========================================*/
 
 @media print {
@@ -921,14 +921,14 @@ footer {
 
 /* ---- Ipad Pro ---- */
 @media only screen and (max-width: 1025px) and (min-height: 1365px) {
-  p{
+  p {
     line-height: 1.5;
   }
-  
+
   header.bleed {
     height: 65vh;
   }
-  
+
   .header {
     height: 100%;
   }
@@ -942,11 +942,10 @@ footer {
   .bleed.practical__faq {
     height: 40vh;
   }
-  
-  .yellow-title{
+
+  .yellow-title {
     font-size: 1.5rem !important;
   }
-
 }
 /* ---- Ipad, ipad mini, ipad air --- */
 @media only screen and (max-width: 825px) and (min-height: 750px) {
