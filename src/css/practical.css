@@ -16,7 +16,7 @@
 
 .practical__content ul,
 .practical__faq ul {
-  list-style-type: disc; 
+  list-style-type: disc;
   margin: 0rem 0rem 1rem 1rem;
 }
 
@@ -415,6 +415,10 @@
 }
 
 @media only screen and (max-width: 500px) {
+  .practical__intro {
+    padding-block-start: 4rem;
+  }
+
   p {
     font-size: 17px;
   }
@@ -447,14 +451,57 @@
   }
 
   .howto__btns > a:last-of-type {
-    color: var(--color-dark);
-    border-color: var(--color-yellow);
-    background-color: var(--color-yellow);
+    color: var(--color-white-darker);
+    border: 1px solid var(--color-white-darker);
+    background-color: var(--color-dark);
   }
 
   .practical__bleed > .practical__intro {
     max-width: 100%;
     margin: 0rem;
     padding-inline: 5%;
+  }
+
+  .content__text > p > strong {
+    line-height: 1.6;
+  }
+
+  .practical__faq > .wrapper__non--bleed {
+    margin-block: 1rem;
+  }
+
+  .howto__btns > a,
+  .btn.btn__google {
+    padding-block: 0.5rem;
+  }
+
+  .intro__howto > .yellow-title {
+    padding-block-start: 1rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .practical__intro{
+    padding-block-start: 2.5rem;
+  }
+  .howto__list > .list__address {
+    padding: 1rem 0.7rem;
+    margin-block: 1rem;
+  }
+
+  .howto__list > .list__address > h3 {
+    font-size: 18px;
+  }
+  .howto__list > .list__address > p {
+    font-size: 16px;
+    padding-block-end: 0.2rem;
+  }
+
+  .howto__list > li:has(a) > p {
+    margin-block-end: 0.5rem;
+  }
+
+  .wrapper__non--bleed > .content_title.yellow-title {
+    padding-block-start: 1.2rem;
   }
 }

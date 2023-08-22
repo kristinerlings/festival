@@ -396,10 +396,34 @@
   }
 }
 
+@media only screen and (max-width: 500px){
+   .container__schedule {
+    padding-block: 1.5rem;
+  }
+  
+  .schedule__intro{
+    padding-inline: 1rem;
+  }
+
+  .btn__schedule{
+    margin-block-start: 1rem;
+  }
+
+  .stage > h2 {
+    margin-block-start: 0rem;
+  }
+
+}
+
 @media only screen and (max-width: 400px) {
   .schedule__artist > h4 {
-    font-size: 18px;
+    font-size: 17px;
   }
+
+  .schedule__artist > p > time{
+    font-size: 16px
+  }
+
   .stage > h2 {
     text-align: left;
   }
@@ -410,3 +434,4 @@
     grid-template-columns: 40% 50% 10%;
   }
 }
+
